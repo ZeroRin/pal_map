@@ -102,7 +102,7 @@ python build_spawner_map.py        # 输出 pal_spawner_map.html
 node tools/fishing_extract_spots.mjs src/paldb/paldb_map_data.js    src/paldb/paldb_fishing_spots.json
 node tools/fishing_extract_spots.mjs src/paldb/paldb_treemap_data.js src/paldb/paldb_fishing_spots_tree.json
 python tools/fishing_merge_spots.py        # 合并 -> paldb_fishing_spots_all.json (按底图归属)
-python tools/fishing_chain_check.py        # 校验 类型→抽签表→鱼影→帕鲁 链路
+python tools/fishing_verify_positions.py   # 校验钓点落点 (98.6% 落在水面像素上)
 ```
 
 赏金首图标（仅当要重抓时）：
@@ -287,7 +287,7 @@ DataTable 只描述「每种类型能钓到什么」。因此坐标取自 paldb 
 | 普通点 | **25 m** | **16 ~ 48 px** | 1.0 ~ 3.0 km | 固定 16px（全图时代表 125m）/ 固定 48px（0.5km 时代表 12m） |
 
 常量在渲染段开头：`BOSS_M/BOSS_MIN/BOSS_MAX`、`PAL_M/PAL_MIN/PAL_MAX`、`ICON_STEP`。
-两套尺寸由 `iconPxBoss()` / `iconPxPal()` 分别计算（`tools/report_icon_scaling.py` 可复现全部数值）。
+两套尺寸由 `iconPxBoss()` / `iconPxPal()` 分别计算（参数即渲染段的 `ICON_*` 常量，改动后跑 `tools/smoke_test_js.mjs` 回归）。
 
 **LOD（仅普通点）**：`palIconMode && iconPxPal() ≥ PAL_LOD_PX(16) && 同屏候选 ≤ PAL_LOD_MAX(2500)`。
 阈值 16 = 普通点尺寸下限，因此**只要在尺寸区间内就显示**，实际开关只由同屏数量决定：
@@ -382,7 +382,7 @@ python tools/export_png.py --icon-px 24 --combine-only   # 不重渲染, 直接�
 两张底图**不再切换**：主图（帕洛斯群岛）打底，世界树按**左上角对齐**叠在其左上角空白区。
 
 - 主图左上角有 **2683 px 的纯空白正方形**（世界树图 2188² 放得下），且两者黑度一致（20~21 vs 19~21），
-  叠上去**无接缝、不遮挡**任何底图内容（校验见 `tools/measure_blank_area.py`）
+  叠上去**无接缝、不遮挡**任何底图内容（叠放几何在 `tools/smoke_test_js.mjs` 中有断言）
 - 两图导出比例一致，所以"左上角对齐"等价于世界坐标的一次**纯平移**，构建时算出并写进 `DATA.maps[].off`：
 
   | 底图 | 平移 | 叠放后占据（主图世界坐标） |
