@@ -911,8 +911,16 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   #cv{display:block;cursor:grab;touch-action:none;-webkit-tap-highlight-color:transparent}
   #cv.drag{cursor:grabbing}
   .panel{position:absolute;background:rgba(22,27,34,.92);border:1px solid #30363d;border-radius:8px;padding:10px 12px;backdrop-filter:blur(4px)}
-  #ctrl{top:10px;left:10px;max-width:290px}
-  #ctrl h1{font-size:14px;margin:0 0 8px}
+  #ctrl{top:10px;left:10px;max-width:290px;max-height:calc(100vh - 20px);overflow:auto}
+  #ctrlHead{display:flex;align-items:center;gap:8px;margin:0 0 6px}
+  #ctgl{flex:0 0 auto;width:32px;height:32px;border-radius:50%;border:1px solid #30363d;background:#0d1117;
+        color:#c9d1d9;font:16px/1 system-ui,sans-serif;cursor:pointer;padding:0}
+  #ctgl:hover{border-color:#58a6ff;color:#58a6ff}
+  #ctrl h1{font-size:14px;margin:0}
+  /* 收起状态: 整个面板缩成左上角一个小圆点 (只留把手按钮) */
+  #ctrl.collapsed{max-width:none;padding:6px;border-radius:50%;overflow:visible}
+  #ctrl.collapsed #ctrlHead{margin:0}
+  #ctrl.collapsed h1,#ctrl.collapsed #ctrlBody{display:none}
   #ctrl label{display:flex;align-items:center;gap:6px;margin:3px 0;cursor:pointer;user-select:none}
   .sw{width:10px;height:10px;border-radius:50%;display:inline-block}
   #search{width:100%;box-sizing:border-box;background:#0d1117;border:1px solid #30363d;border-radius:5px;color:#c9d1d9;padding:5px 8px;margin-top:6px}
@@ -925,10 +933,11 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   #tip{position:absolute;pointer-events:none;background:rgba(22,27,34,.95);border:1px solid #30363d;border-radius:5px;padding:4px 8px;font-size:12px;display:none;z-index:9}
   #closeX{position:absolute;top:6px;right:10px;cursor:pointer;color:#8b949e}
   .hit{color:#f0883e}
-  /* 手机/窄屏: 控制面板收窄、详情面板改为贴底全宽, 避免遮满地图 */
-  @media (max-width: 560px){
+  /* 手机/窄屏: 控制面板收窄、把手加大便于手指点按, 详情面板改为贴底全宽 */
+  @media (max-width: 700px){
     #ctrl{max-width:calc(100vw - 40px);font-size:12px}
     #ctrl h1{font-size:13px}
+    #ctgl{width:40px;height:40px;font-size:19px}
     #detail{left:8px;right:8px;width:auto;top:auto;bottom:8px;max-height:52vh}
     #stats{font-size:11px}
   }
@@ -938,18 +947,23 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
 <canvas id="cv"></canvas>
 <div id="tip"></div>
 <div class="panel" id="ctrl">
-  <h1>幻兽帕鲁 · 刷怪区域分布</h1>
-  <div id="layers"></div>
-  <label><input type="checkbox" id="ckRegion" checked> 普通点按刷怪器着色 (相邻不同色; 灰=洞窟内部)</label>
-  <label><input type="checkbox" id="ckPalIcon" checked> 普通点显示帕鲁头像 (放大到位后自动启用)</label>
-  <label><input type="checkbox" id="ckRadius"> 显示辅助圆 (填充, 便于放大后辨认点位)</label>
-  <label style="display:block">辅助圆半径 <output id="radVal">25</output> m
-    <input type="range" id="radRange" min="1" max="150" step="1" value="25" style="width:100%">
-  </label>
-  <label><input type="checkbox" id="ckGrid"> 显示公里网格</label>
-  <input id="search" placeholder="搜索帕鲁: 中文名 / 英文ID / 图鉴号 / 属性">
-  <div id="hits" style="color:#8b949e;font-size:11px;margin-top:4px"></div>
-  <div id="stats"></div>
+  <div id="ctrlHead">
+    <button id="ctgl" title="展开 / 收起控制面板" aria-label="展开或收起控制面板">☰</button>
+    <h1>幻兽帕鲁 · 刷怪区域分布</h1>
+  </div>
+  <div id="ctrlBody">
+    <div id="layers"></div>
+    <label><input type="checkbox" id="ckRegion" checked> 普通点按刷怪器着色 (相邻不同色; 灰=洞窟内部)</label>
+    <label><input type="checkbox" id="ckPalIcon" checked> 普通点显示帕鲁头像 (放大到位后自动启用)</label>
+    <label><input type="checkbox" id="ckRadius"> 显示辅助圆 (填充, 便于放大后辨认点位)</label>
+    <label style="display:block">辅助圆半径 <output id="radVal">25</output> m
+      <input type="range" id="radRange" min="1" max="150" step="1" value="25" style="width:100%">
+    </label>
+    <label><input type="checkbox" id="ckGrid"> 显示公里网格</label>
+    <input id="search" placeholder="搜索帕鲁: 中文名 / 英文ID / 图鉴号 / 属性">
+    <div id="hits" style="color:#8b949e;font-size:11px;margin-top:4px"></div>
+    <div id="stats"></div>
+  </div>
 </div>
 <div class="panel" id="detail"><span id="closeX">✕</span><h2></h2><div class="sub"></div><div class="body"></div></div>
 <script>
@@ -1245,6 +1259,18 @@ cv.addEventListener('touchend',e=>{
 },{passive:false});
 cv.addEventListener('touchcancel',()=>{touch=null;});
 document.getElementById('closeX').onclick=()=>detail.style.display='none';
+// ---- 控制面板折叠: 手机默认收起成左上角一个小圆点 (☰), 点一下展开 ----
+const ctrlEl=document.getElementById('ctrl'), ctglEl=document.getElementById('ctgl');
+function setCtrlCollapsed(v){
+  ctrlEl.classList.toggle('collapsed', v);
+  ctglEl.textContent = v ? '☰' : '✕';
+  ctglEl.title = v ? '展开控制面板' : '收起控制面板';
+}
+// 窄屏/触屏默认收起 (面板会占满手机屏幕), 桌面默认展开
+const ctrlDefaultCollapsed = (typeof matchMedia==='function') &&
+  (matchMedia('(max-width: 700px)').matches || matchMedia('(hover: none)').matches);
+setCtrlCollapsed(ctrlDefaultCollapsed);
+ctglEl.onclick=()=>setCtrlCollapsed(!ctrlEl.classList.contains('collapsed'));
 addEventListener('resize',()=>{resize();draw();});
 
 function pick(mx,my,tolMin){

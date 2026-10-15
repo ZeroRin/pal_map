@@ -38,11 +38,17 @@ function ctxStub() {
   return new Proxy(base, h);
 }
 const UNCHECKED = new Set(['ckRadius', 'ckUnder', 'ckGrid']);   // 与页面默认一致
+const MOBILE = process.argv.includes('--mobile');   // 模拟手机: matchMedia 命中窄屏 / 无悬停
 function elementStub(id) {
+  const cls = new Set();
   const el = {
     id, style: {}, dataset: {}, checked: !UNCHECKED.has(id), value: '25', innerHTML: '', textContent: '',
     width: 1920, height: 1080,
-    classList: { add() {}, remove() {}, toggle() {}, contains() { return false; } },
+    classList: {
+      add(c) { cls.add(c); }, remove(c) { cls.delete(c); },
+      toggle(c, v) { const on = (v === undefined) ? !cls.has(c) : !!v; if (on) cls.add(c); else cls.delete(c); return on; },
+      contains(c) { return cls.has(c); },
+    },
     getContext: () => ctxStub(),
     _lis: {},                                        // 记录事件监听, 供触控手势测试派发
     addEventListener(t, f) { (this._lis[t] = this._lis[t] || []).push(f); },
@@ -66,8 +72,10 @@ class ImageStub {                       // 异步"加载完成", 模拟浏览器
 }
 const sandbox = {
   document: documentStub, Image: ImageStub, console,
-  innerWidth: 1920, innerHeight: 1080, devicePixelRatio: 1,
+  innerWidth: MOBILE ? 390 : 1920, innerHeight: MOBILE ? 844 : 1080, devicePixelRatio: MOBILE ? 3 : 1,
   requestAnimationFrame: (f) => setTimeout(f, 0),
+  // matchMedia: 手机模式下命中窄屏与"无悬停", 桌面模式都不命中
+  matchMedia: (q) => ({ matches: MOBILE && /max-width:\s*700px|hover:\s*none/.test(q), media: q }),
   addEventListener() {}, removeEventListener() {},
   setTimeout, clearTimeout, Math, JSON, Map, Set, Date, Object, Array, String, Number, RegExp,
 };
@@ -225,5 +233,23 @@ if (hasTouch) {
   fire('touchend', [], [T(960, 540)]);
   check(elements['detail'].style.display === 'none', '轻点空白处不打开面板');
 }
+
+// ---- 控制面板折叠 (手机默认收起成左上角小圆点) ----
+console.log(`✓ 控制面板折叠测试 (${MOBILE ? '手机 390×844' : '桌面 1920×1080'})`);
+const ctrl = elements['ctrl'], ctgl = elements['ctgl'];
+check(!!ctrl && !!ctgl, '控制面板与折叠把手都存在');
+check(typeof ctgl.onclick === 'function', '把手绑定了点击处理');
+const collapsed0 = ctrl.classList.contains('collapsed');
+check(MOBILE ? collapsed0 : !collapsed0,
+      MOBILE ? '手机默认收起 (只剩小圆点)' : '桌面默认展开');
+ctgl.onclick();
+check(ctrl.classList.contains('collapsed') !== collapsed0, '点击把手可切换展开/收起');
+check(ctgl.textContent === (ctrl.classList.contains('collapsed') ? '☰' : '✕'),
+      `把手图标随状态变化 (${ctgl.textContent})`);
+ctgl.onclick();
+check(ctrl.classList.contains('collapsed') === collapsed0, '再次点击恢复原状态');
+check(/touch-action:\s*none/.test(ev("document.getElementById('cv') && 'x'") === 'x' ? html : ''),
+      'canvas 带 touch-action:none (浏览器不再接管双指手势)');
+check(/<div id="ctrlBody">/.test(html), '控制面板内容包在 #ctrlBody 里 (收起时整块隐藏)');
 console.log(ok ? '\nSMOKE TEST: PASS' : '\nSMOKE TEST: FAIL');
 process.exit(ok ? 0 : 1);
