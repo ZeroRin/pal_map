@@ -799,17 +799,18 @@ def main():
                         if a != b:
                             adj[a].add(b); adj[b].add(a)
 
-    # 3) DSATUR 着色
+    # 3) DSATUR 着色 (必须确定性: 平局用 key 兜底, 否则 set 迭代顺序受 PYTHONHASHSEED 影响,
+    #    每次构建会给出不同但等价的配色 -> 成品 HTML 出现 7MB 假 diff)
     color = {}
     sat = {k: set() for k in keys}
     un = set(keys)
     while un:
-        k = max(un, key=lambda k: (len(sat[k]), len(adj[k])))
+        k = max(un, key=lambda x: (len(sat[x]), len(adj[x]), x))
         used = sat[k]
         c = next((c for c in range(len(PALETTE)) if c not in used), None)
         if c is None:
             cnt = collections.Counter(color[n] for n in adj[k] if n in color)
-            c = min(range(len(PALETTE)), key=lambda c: cnt.get(c, 0))
+            c = min(range(len(PALETTE)), key=lambda c: (cnt.get(c, 0), c))
         color[k] = c
         un.discard(k)
         for n in adj[k]:
@@ -820,9 +821,9 @@ def main():
         conf = [k for k in keys if any(color[n] == color[k] for n in adj[k])]
         if not conf: break
         improved = False
-        for k in sorted(conf, key=lambda k: -len(adj[k])):
+        for k in sorted(conf, key=lambda x: (-len(adj[x]), x)):
             nb = {color[n] for n in adj[k]}
-            free = [c for c in set(color.values()) if c not in nb]
+            free = [c for c in sorted(set(color.values())) if c not in nb]
             if free:
                 color[k] = free[0]; improved = True
         if not improved: break
