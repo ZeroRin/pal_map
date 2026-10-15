@@ -860,14 +860,13 @@ def main():
         item = {"key": m["key"], "label": m["label"], "bounds": m["bounds"],
                 "off": m.get("off", [0.0, 0.0]),      # 叠放平移量 (世界坐标 cm, 主图为 0)
                 # 高清底图用相对路径引用: 与 HTML 同目录时自动加载, 缺失则退回内嵌 4096
-                "hi": (MAPS_URL + "/" + m["img8k"]) if m.get("img8k") else "",
+
                 "embed": None, "size": 4096}
         f4 = os.path.join(MAPS_DIR, m.get("img4k", ""))
         if m.get("img4k") and os.path.exists(f4):
             with open(f4, "rb") as fh:
                 item["embed"] = "data:image/webp;base64," + base64.b64encode(fh.read()).decode()
-            print(f'  底图 {m["label"]}: 内嵌 maps/{m.get("img4k")} ({os.path.getsize(f4)/1e6:.2f} MB)'
-                  f'  高清可选 {item["hi"]}')
+            print(f'  底图 {m["label"]}: 内嵌 maps/{m.get("img4k")} ({os.path.getsize(f4)/1e6:.2f} MB)')
         else:
             print(f'  底图 {m["label"]}: 未找到 maps/{m.get("img4k")}, 将仅显示网格')
         maps_out.append(item)
@@ -960,7 +959,6 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
       <input type="range" id="radRange" min="1" max="150" step="1" value="25" style="width:100%">
     </label>
     <label><input type="checkbox" id="ckGrid"> 显示公里网格</label>
-    <label><input type="checkbox" id="ckHD"> 加载高清底图 (8192, 较慢; 手机/省流默认关闭)</label>
     <input id="search" placeholder="搜索帕鲁: 中文名 / 英文ID / 图鉴号 / 属性">
     <div id="hits" style="color:#8b949e;font-size:11px;margin-top:4px"></div>
     <div id="stats"></div>
@@ -1115,40 +1113,13 @@ function palInfo(e){
 let view = {cx:(B.minX+B.maxX)/2, cy:(B.minY+B.maxY)/2, s:1}; // cx:世界X中心(北), cy:世界Y中心(东)
 let dpr = 1;
 // ---- 底图: 主图 + 叠放的副图 (世界树叠在左上角空白区) ----
-// 先只用内嵌的 4096 版 (随 HTML 一起到达, 首屏立刻可见), 高清 8192 按需、延后加载
-const embedImgs = MAPS.map(m => {
+// 只用内嵌的 4096 版: 随 HTML 一起到达, 无额外请求、也不受网络状况影响
+// (8192 高清版已弃用: 每个访客要多下 8.3MB, 而实际观感提升很有限)
+const mapImgs = MAPS.map(m => {
   const im = new Image();
   if (m.embed) im.src = m.embed;
   return im;
 });
-const mapImgs = embedImgs.slice();
-const hdImgs = MAPS.map(() => null);
-let hdLoaded = false;
-function setHD(on){
-  MAPS.forEach((m, i) => {
-    if (on && m.hi && !hdImgs[i]) {                   // 需要高清: 现在才开始下载
-      const im = new Image();
-      im.onload = () => { if (hdImgs[i] === im) { mapImgs[i] = im; draw(); } };
-      im.onerror = () => { mapImgs[i] = embedImgs[i]; hdImgs[i] = null; draw(); };
-      im.src = m.hi;
-      hdImgs[i] = im;
-    } else if (!on) {                                 // 关掉高清: 退回内嵌版
-      if (hdImgs[i]) { hdImgs[i].src = ''; hdImgs[i] = null; }
-      mapImgs[i] = embedImgs[i];
-    }
-  });
-  hdLoaded = on;
-  if (typeof draw === 'function') draw();
-}
-// 高清是否值得加载: 触屏/窄屏(手机)、省流模式、慢速网络都不加载
-function wantHD(){
-  if (typeof matchMedia === 'function' && matchMedia('(hover: none)').matches) return false;
-  if (innerWidth < 900) return false;
-  const c = (typeof navigator !== 'undefined' && navigator.connection) || {};
-  if (c.saveData) return false;
-  if (/^(slow-2g|2g|3g)$/.test(c.effectiveType || '')) return false;
-  return true;
-}
 
 function resize(){
   dpr = devicePixelRatio||1;
@@ -1584,7 +1555,6 @@ document.getElementById('search').addEventListener('input',e=>{
   }
   document.getElementById('ckRegion').onchange=e=>{regionColor=e.target.checked;draw();};
   document.getElementById('ckPalIcon').onchange=e=>{palIconMode=e.target.checked;SPRITES.clear();draw();};
-  document.getElementById('ckHD').onchange=e=>{setHD(e.target.checked);updateStats();};
   document.getElementById('ckRadius').onchange=e=>{showRadius=e.target.checked;draw();};
   document.getElementById('radRange').oninput=e=>{
     radM=+e.target.value; document.getElementById('radVal').textContent=radM; draw();
@@ -1605,13 +1575,13 @@ function updateStats(){
     if(t.code==='FC'||t.code==='FR') continue;
     parts.push(`${t.label} ${c[t.code]}`);
   }
-  document.getElementById('stats').textContent=
+  document.getElementById('stats').innerHTML=
     `显示 ${n} / ${tot} 个标记`+
     (MAPS.length>1?`（${MAPS.map((m,i)=>`${m.label} ${mapCountTxt[i]}`).join(' · ')}）`:'')+`\n`+
     parts.join(' · ')+
     `\n普通钓点 ${c.FC} · 稀有钓点 ${c.FR}`+
     (show['ND']?`\n无数据(残留 sheet) ${c.ND}`:`\n<span style="color:#6e7681">无数据图层已隐藏 (${c.ND} 个)</span>`)+
-    `\n<span style="color:#6e7681">底图 ${hdLoaded?'高清 8192':'内嵌 4096'}${hdLoaded?'':' (手机/省流或未开启时不加载 8192)'}</span>`+
+    `\n<span style="color:#6e7681">底图 内嵌 4096 (随 HTML 一起到达, 无额外请求)</span>`+
     `\n<span style="color:#6e7681">Boss 头像 ${BOSS_M}m→${iconPxBoss()}px (${BOSS_MIN}~${BOSS_MAX})</span>`+
     `\n<span style="color:#6e7681">普通点头像 ${PAL_M}m→${iconPxPal()}px (${PAL_MIN}~${PAL_MAX}): `+
     `${palIconMode?(palIconsOn?'显示中':`已开启, 放大到位后显示 (需 ≥${PAL_LOD_PX}px 且同屏 ≤${PAL_LOD_MAX} 个)`):'已关闭'}</span>`;
@@ -1799,16 +1769,7 @@ function draw(){
 
 ready = true;                // 初始化完成, 之后允许绘制
 resize(); fit(); updateStats(); draw();
-// 高清底图延后到首帧之后再加载: 首屏用内嵌 4096 立刻可见, 不阻塞交互
-(function initHD(){
-  const ck = document.getElementById('ckHD');
-  const on = wantHD();
-  ck.checked = on;
-  if(!on){ updateStats(); return; }
-  const go = () => { setHD(true); updateStats(); };
-  if(typeof requestIdleCallback === 'function') requestIdleCallback(go, {timeout: 3000});
-  else setTimeout(go, 800);
-})();
+
 addEventListener('load', draw);   // 内嵌底图解码完成后重绘一次
 </script>
 </body>
