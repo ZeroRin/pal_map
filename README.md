@@ -78,6 +78,11 @@ pal_spawner_map/
 
 依赖：Python 3 + Pillow（`pip install pillow`）；下载瓦片需要 Node 18+。
 
+> **构建是确定性的**（同输入必得同输出的 `pal_spawner_map.html`，已验证多种 `PYTHONHASHSEED`）。
+> 若重跑构建出现非预期 diff，说明改动引入了依赖 `set` / `dict` 迭代顺序的逻辑——
+> 例如刷怪器着色的平局选择必须带 key 兜底（见 `build_spawner_map.py` 的 DSATUR 段），
+> 否则每次构建都会产生约 7 MB 的假 diff 并往仓库塞新 blob。
+
 ```bash
 # 0) 仅当帕鲁表有更新时才需要：重新解析中文名/图标
 python tools/parse_pals_wiki.py
