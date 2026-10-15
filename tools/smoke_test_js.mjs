@@ -65,9 +65,10 @@ const documentStub = {
   createElement(tag) { const e = elementStub(tag); if (tag === 'canvas') e.width = e.height = 64; return e; },
   addEventListener() {},
 };
+const imgSrcs = [];                     // 记录所有被请求的图片 src (校验高清底图按需加载)
 class ImageStub {                       // 异步"加载完成", 模拟浏览器行为
   constructor() { this.width = 40; this.height = 40; this.naturalWidth = 40; this.complete = true; }
-  set src(v) { this._src = v; if (this.onload) setTimeout(() => this.onload(), 0); }
+  set src(v) { this._src = v; if (v) imgSrcs.push(v); if (this.onload) setTimeout(() => this.onload(), 0); }
   get src() { return this._src; }
 }
 const sandbox = {
@@ -251,5 +252,27 @@ check(ctrl.classList.contains('collapsed') === collapsed0, '再次点击恢复�
 check(/touch-action:\s*none/.test(ev("document.getElementById('cv') && 'x'") === 'x' ? html : ''),
       'canvas 带 touch-action:none (浏览器不再接管双指手势)');
 check(/<div id="ctrlBody">/.test(html), '控制面板内容包在 #ctrlBody 里 (收起时整块隐藏)');
+
+// ---- 高清底图按需加载: 手机/省流不请求 8192, 桌面延后加载 ----
+console.log(`✓ 高清底图策略测试 (${MOBILE ? '手机' : '桌面'})`);
+await new Promise(r => setTimeout(r, 1200));            // 等延后加载触发
+const isHD = s => s.includes('_8192.webp');        // 精确匹配底图文件名 (data URI 的 base64 里可能碰巧含 8192)
+const hdReqs = imgSrcs.filter(isHD);
+const ckHD = elements['ckHD'];
+check(!!ckHD, '存在"加载高清底图"开关');
+if (MOBILE) {
+  check(!ckHD.checked, '手机默认关闭高清底图');
+  check(hdReqs.length === 0, `手机未请求任何 8192 底图 (共 ${hdReqs.length} 个请求)`);
+  check(ev('hdLoaded') === false, '手机当前使用内嵌 4096');
+  // 手动打开 -> 才发起请求
+  ckHD.checked = true; ckHD.onchange({ target: ckHD });
+  check(imgSrcs.filter(isHD).length >= 2, '手动勾选后才会请求 8192 底图');
+  ckHD.checked = false; ckHD.onchange({ target: ckHD });   // 关掉 -> 退回内嵌
+  check(ev('mapImgs[1] === embedImgs[1]'), '关闭后底图退回内嵌 4096');
+} else {
+  check(ckHD.checked, '桌面默认开启高清底图');
+  check(hdReqs.length >= 2, `桌面延后请求了 8192 底图 (${hdReqs.length} 个)`);
+  check(ev('hdLoaded') === true, '桌面已切到高清底图');
+}
 console.log(ok ? '\nSMOKE TEST: PASS' : '\nSMOKE TEST: FAIL');
 process.exit(ok ? 0 : 1);
