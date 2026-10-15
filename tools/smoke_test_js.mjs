@@ -44,7 +44,9 @@ function elementStub(id) {
     width: 1920, height: 1080,
     classList: { add() {}, remove() {}, toggle() {}, contains() { return false; } },
     getContext: () => ctxStub(),
-    addEventListener() {}, removeEventListener() {}, appendChild() {}, removeChild() {},
+    _lis: {},                                        // 记录事件监听, 供触控手势测试派发
+    addEventListener(t, f) { (this._lis[t] = this._lis[t] || []).push(f); },
+    removeEventListener() {}, appendChild() {}, removeChild() {},
     querySelector: () => elementStub(id + '>*'), querySelectorAll: () => [],
     getBoundingClientRect: () => ({ left: 0, top: 0, width: 1920, height: 1080 }),
   };
@@ -156,6 +158,72 @@ if (bg.length >= 2) {
         '世界树贴图矩形落在主图矩形内 (叠在空白区)');
   check(Math.abs(bw / aw - 0.236) < 0.01,
         `世界树贴图宽度比 ${(bw / aw).toFixed(3)} ≈ 0.236 (341797/1448800)`);
+}
+
+// ---- 触控手势: 在桩上派发真实 touch 事件, 检查捏合缩放/单指平移/轻点 ----
+console.log('✓ 触控手势测试');
+const cvEl = elements['cv'];
+const hasTouch = cvEl && cvEl._lis && cvEl._lis.touchstart && cvEl._lis.touchmove && cvEl._lis.touchend;
+check(!!hasTouch, 'canvas 已注册 touchstart / touchmove / touchend');
+if (hasTouch) {
+  // changed: touchend 时抬起的手指 (touches 为空, 必须显式给出)
+  const fire = (type, touches, changed) => cvEl._lis[type].forEach(f => f({
+    touches, changedTouches: changed || touches, preventDefault() {},
+  }));
+  const T = (x, y) => ({ clientX: x, clientY: y });
+  const state = () => ev('({s:view.s, cx:view.cx, cy:view.cy})');
+
+  // 1) 双指捏合放大: 两指间距 100 -> 200, 中点保持不动
+  ev('view.s = 1920/1448800; view.cx = (MAPS[0].bounds.minX+MAPS[0].bounds.maxX)/2; view.cy = 0;');
+  const before = state();
+  const midX = 600, midY = 400;
+  const anchorBefore = ev(`(function(){const w=s2w(${midX},${midY});return {x:w[0],y:w[1]};})()`);
+  fire('touchstart', [T(midX - 50, midY), T(midX + 50, midY)]);
+  fire('touchmove', [T(midX - 100, midY), T(midX + 100, midY)]);
+  const after = state();
+  const anchorAfter = ev(`(function(){const w=s2w(${midX},${midY});return {x:w[0],y:w[1]};})()`);
+  check(Math.abs(after.s / before.s - 2) < 0.01, `双指间距翻倍 -> 缩放 ×${(after.s / before.s).toFixed(2)}`);
+  check(Math.abs(anchorAfter.x - anchorBefore.x) < 1 && Math.abs(anchorAfter.y - anchorBefore.y) < 1,
+        '缩放锚点(双指中点)下的世界坐标保持不变');
+  fire('touchend', [], []);
+  check(!ev('touch'), 'touchend 后手势状态已清空');
+
+  // 2) 单指拖动平移: 屏幕向右 100px -> 世界 Y(东) 反向
+  const p0 = state();
+  fire('touchstart', [T(300, 300)]);
+  fire('touchmove', [T(400, 300)]);
+  const p1 = state();
+  check(Math.abs((p0.cy - p1.cy) - 100 / p1.s) < 1, `单指横拖 100px -> 平移 ${((p0.cy - p1.cy) * p1.s).toFixed(0)}px (与世界坐标一致)`);
+  check(Math.abs(p1.cx - p0.cx) < 1, '纯横向拖动不影响南北方向');
+  fire('touchend', [], []);
+
+  // 3) 双指整体拖动 (间距不变) 只平移不缩放
+  const z0 = state();
+  fire('touchstart', [T(500, 400), T(600, 400)]);
+  fire('touchmove', [T(520, 400), T(620, 400)]);
+  const z1 = state();
+  check(Math.abs(z1.s - z0.s) < 1e-12, '双指等距平移不改变缩放');
+  check(Math.abs((z0.cy - z1.cy) - 20 / z1.s) < 1, '双指平移跟随中点移动');
+  fire('touchend', [], []);
+
+  // 4) 轻点 -> 打开点位面板 (先把视口对准一个真实 Boss 点位, 再点它的屏幕坐标)
+  const hitInfo = ev(`(function(){
+      const p = PTS.find(q => q.t==='F' || q.t==='NB');
+      view.cx = pX(p); view.cy = pY(p); view.s = 1920/1448800*6;
+      const s = PXY(p); return {x:s[0], y:s[1], t:p.t, n:p.n};
+  })()`);
+  elements['detail'].style.display = 'none';
+  fire('touchstart', [T(hitInfo.x, hitInfo.y)]);
+  fire('touchend', [], [T(hitInfo.x, hitInfo.y)]);
+  const shown = elements['detail'] && elements['detail'].style.display === 'block';
+  check(shown, `轻点 Boss 点位 -> 详情面板打开 (${hitInfo.t} / ${hitInfo.n})`);
+
+  // 5) 轻点空白处 -> 关闭面板
+  elements['detail'].style.display = 'none';
+  ev('view.cx = MAPS[0].bounds.maxX; view.cy = MAPS[0].bounds.minY;');   // 移到地图角落(无点位)
+  fire('touchstart', [T(960, 540)]);
+  fire('touchend', [], [T(960, 540)]);
+  check(elements['detail'].style.display === 'none', '轻点空白处不打开面板');
 }
 console.log(ok ? '\nSMOKE TEST: PASS' : '\nSMOKE TEST: FAIL');
 process.exit(ok ? 0 : 1);

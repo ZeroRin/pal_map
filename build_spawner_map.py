@@ -903,10 +903,12 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>幻兽帕鲁 · 刷怪区域分布图</title>
 <style>
-  html,body{margin:0;height:100%;background:#0d1117;color:#c9d1d9;font:13px/1.5 "Segoe UI",sans-serif;overflow:hidden}
-  #cv{display:block;cursor:grab}
+  html,body{margin:0;height:100%;background:#0d1117;color:#c9d1d9;font:13px/1.5 "Segoe UI",sans-serif;overflow:hidden;overscroll-behavior:none}
+  /* touch-action:none 让浏览器不再把画布上的双指操作当成"页面缩放", 改由下面的触控逻辑处理 */
+  #cv{display:block;cursor:grab;touch-action:none;-webkit-tap-highlight-color:transparent}
   #cv.drag{cursor:grabbing}
   .panel{position:absolute;background:rgba(22,27,34,.92);border:1px solid #30363d;border-radius:8px;padding:10px 12px;backdrop-filter:blur(4px)}
   #ctrl{top:10px;left:10px;max-width:290px}
@@ -923,6 +925,13 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   #tip{position:absolute;pointer-events:none;background:rgba(22,27,34,.95);border:1px solid #30363d;border-radius:5px;padding:4px 8px;font-size:12px;display:none;z-index:9}
   #closeX{position:absolute;top:6px;right:10px;cursor:pointer;color:#8b949e}
   .hit{color:#f0883e}
+  /* 手机/窄屏: 控制面板收窄、详情面板改为贴底全宽, 避免遮满地图 */
+  @media (max-width: 560px){
+    #ctrl{max-width:calc(100vw - 40px);font-size:12px}
+    #ctrl h1{font-size:13px}
+    #detail{left:8px;right:8px;width:auto;top:auto;bottom:8px;max-height:52vh}
+    #stats{font-size:11px}
+  }
 </style>
 </head>
 <body>
@@ -1143,6 +1152,8 @@ function buildPalIndex(){
 
 // ---- 交互 ----
 let drag=null;
+// 触屏设备没有真正的悬停, 关掉 hover 提示 (否则点击后可能留下残影)
+const noHover = (typeof matchMedia==='function') && matchMedia('(hover: none)').matches;
 cv.addEventListener('mousedown',e=>{drag={x:e.clientX,y:e.clientY};cv.classList.add('drag');});
 addEventListener('mouseup',()=>{drag=null;cv.classList.remove('drag');});
 addEventListener('mousemove',e=>{
@@ -1150,26 +1161,95 @@ addEventListener('mousemove',e=>{
     view.cy -= (e.clientX-drag.x)/view.s;   // 屏幕横向 = 世界Y(东西)
     view.cx += (e.clientY-drag.y)/view.s;   // 屏幕纵向 = 世界X(南北)
     drag={x:e.clientX,y:e.clientY}; draw();
-  } else hover(e);
+  } else if(!noHover) hover(e);
 });
+// 以屏幕点 (sx,sy) 为锚点缩放 k 倍: 锚点下的世界坐标保持不动
+function zoomAt(sx, sy, k){
+  const [wx,wy]=s2w(sx,sy);
+  view.s=Math.min(Math.max(view.s*k,1e-5),2);
+  // 反解: 让 (wx,wy) 仍落在 (sx,sy) —— w2s 为线性映射, 直接解出 cx/cy
+  view.cy = wy - (sx - innerWidth/2)/view.s;
+  view.cx = wx + (sy - innerHeight/2)/view.s;
+}
 cv.addEventListener('wheel',e=>{
   e.preventDefault();
-  const [wx,wy]=s2w(e.clientX,e.clientY);
-  view.s *= (e.deltaY<0?1.2:1/1.2);
-  view.s=Math.min(Math.max(view.s,1e-5),2);
-  const [nx,ny]=s2w(e.clientX,e.clientY);
-  view.cx+=wx-nx; view.cy+=wy-ny; draw();
+  zoomAt(e.clientX, e.clientY, e.deltaY<0?1.2:1/1.2);
+  draw();
 },{passive:false});
 cv.addEventListener('dblclick',()=>{fit();draw();});
 cv.addEventListener('click',e=>{
+  if(Date.now()-lastTouchTs<600) return;    // 触屏轻点已在 touchend 处理, 忽略补发的 click
   const hit=pick(e.clientX,e.clientY);
   if(hit>=0) showDetail(hit); else detail.style.display='none';
 });
+// ---- 触控: 单指拖动平移 / 双指捏合缩放 / 轻点查看点位 / 双击复位 ----
+// (canvas 上已设 touch-action:none, 浏览器不会再把双指当成页面缩放)
+let touch=null, lastTap=0, lastTapX=0, lastTapY=0, lastTouchTs=0;
+function touchDist(a,b){ return Math.hypot(a.clientX-b.clientX, a.clientY-b.clientY); }
+cv.addEventListener('touchstart',e=>{
+  if(e.touches.length===1){
+    const t=e.touches[0];
+    touch={mode:'pan', x:t.clientX, y:t.clientY, moved:0, t0:Date.now()};
+  }else if(e.touches.length>=2){
+    const a=e.touches[0], b=e.touches[1];
+    touch={mode:'pinch', d:touchDist(a,b), mx:(a.clientX+b.clientX)/2, my:(a.clientY+b.clientY)/2};
+  }
+  e.preventDefault();
+},{passive:false});
+cv.addEventListener('touchmove',e=>{
+  if(touch && touch.mode==='pan' && e.touches.length===1){
+    const t=e.touches[0];
+    const dx=t.clientX-touch.x, dy=t.clientY-touch.y;
+    touch.moved += Math.hypot(dx,dy);
+    touch.x=t.clientX; touch.y=t.clientY;
+    view.cy -= dx/view.s;                  // 屏幕横向 = 世界Y(东西)
+    view.cx += dy/view.s;                  // 屏幕纵向 = 世界X(南北)
+    draw();
+  }else if(touch && touch.mode==='pinch' && e.touches.length>=2){
+    const a=e.touches[0], b=e.touches[1];
+    const d=touchDist(a,b), mx=(a.clientX+b.clientX)/2, my=(a.clientY+b.clientY)/2;
+    if(touch.d>0) zoomAt(mx, my, d/touch.d);          // 以双指中点为锚点缩放
+    view.cy -= (mx-touch.mx)/view.s;                  // 双指整体移动 = 平移
+    view.cx += (my-touch.my)/view.s;
+    touch.d=d; touch.mx=mx; touch.my=my;
+    draw();
+  }else if(e.touches.length===0){
+    touch=null;
+  }
+  e.preventDefault();
+},{passive:false});
+cv.addEventListener('touchend',e=>{
+  if(e.touches.length>0){                  // 还有手指按着 -> 按剩余手指数重置手势
+    if(e.touches.length===1){
+      const t=e.touches[0];
+      touch={mode:'pan', x:t.clientX, y:t.clientY, moved:99, t0:Date.now()};
+    }
+  }else if(touch && touch.mode==='pan'){
+    const t=e.changedTouches[0];
+    const now=Date.now();
+    lastTouchTs=now;                                   // 让补发的 click 被忽略
+    if(touch.moved<12 && now-touch.t0<400){           // 轻点: 查看点位 / 双击: 复位
+      if(now-lastTap<300 && Math.hypot(t.clientX-lastTapX, t.clientY-lastTapY)<24){
+        fit(); detail.style.display='none'; lastTap=0;  // 双击复位 (并收起首次轻点打开的面板)
+      }else{
+        lastTap=now; lastTapX=t.clientX; lastTapY=t.clientY;
+        const hit=pick(t.clientX, t.clientY, 18);       // 手指点击放宽判定半径
+        if(hit>=0) showDetail(hit); else detail.style.display='none';
+      }
+    }
+    touch=null;
+  }else{
+    touch=null;
+  }
+  e.preventDefault();
+},{passive:false});
+cv.addEventListener('touchcancel',()=>{touch=null;});
 document.getElementById('closeX').onclick=()=>detail.style.display='none';
 addEventListener('resize',()=>{resize();draw();});
 
-function pick(mx,my){
+function pick(mx,my,tolMin){
   // 按"到点距离 / 该点的判定半径"取最优: 头像点判定半径=图标半径, 普通点=10px
+  // tolMin: 最小判定半径 (触屏用手指时放宽)
   let best=-1, bestScore=1.0;
   for(let i=0;i<PTS.length;i++){
     const p=PTS[i];
@@ -1179,7 +1259,7 @@ function pick(mx,my){
     const d=Math.hypot(sx-mx,sy-my);
     const bIcon = isIconBoss(p) && bossIconSrc(p);
     const pIcon = palIconsOn && p.t==='C' && !p.u && p.ii!=null && p.ii>=0;
-    const tol = bIcon ? iconPxBoss()/2 : (pIcon ? iconPxPal()/2 : 10);
+    const tol = Math.max(tolMin||0, bIcon ? iconPxBoss()/2 : (pIcon ? iconPxPal()/2 : 10));
     const score=d/tol;
     if(score<bestScore){ bestScore=score; best=i; }
   }
