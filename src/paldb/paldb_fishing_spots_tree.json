@@ -1,0 +1,1080 @@
+[
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 497663,
+   "Y": -682457,
+   "Z": 37957
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_B_Common",
+  "comment": "WorldTree_B_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 540007,
+   "Y": -689639,
+   "Z": 31226
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_B_Common",
+  "comment": "WorldTree_B_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 523231,
+   "Y": -642269,
+   "Z": 10987
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 519433,
+   "Y": -642700,
+   "Z": 10954
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 509261,
+   "Y": -639410,
+   "Z": 10930
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 471623,
+   "Y": -737270,
+   "Z": 14868
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 567312,
+   "Y": -596937,
+   "Z": 20871
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 548249,
+   "Y": -684103,
+   "Z": 33551
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 550157,
+   "Y": -681414,
+   "Z": 33551
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 548602,
+   "Y": -677705,
+   "Z": 33551
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 550409,
+   "Y": -697495,
+   "Z": 35013
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 552548,
+   "Y": -694204,
+   "Z": 35003
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 556157,
+   "Y": -653885,
+   "Z": 34939
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 552336,
+   "Y": -659760,
+   "Z": 34987
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 561741,
+   "Y": -678193,
+   "Z": 35661
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 564842,
+   "Y": -694391,
+   "Z": 35648
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 582019,
+   "Y": -703634,
+   "Z": 42557
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 587592,
+   "Y": -694668,
+   "Z": 42553
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 583086,
+   "Y": -681874,
+   "Z": 40541
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 584797,
+   "Y": -687838,
+   "Z": 40533
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 578044,
+   "Y": -712759,
+   "Z": 42573
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 607892,
+   "Y": -597869,
+   "Z": 27289
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 487630,
+   "Y": -629486,
+   "Z": 14834
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 541192,
+   "Y": -680344,
+   "Z": 31226
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 541000,
+   "Y": -670990,
+   "Z": 31226
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 506314,
+   "Y": -630904,
+   "Z": 10930
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 503901,
+   "Y": -622104,
+   "Z": 12878
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 563150,
+   "Y": -542853,
+   "Z": 38963
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 569876,
+   "Y": -553318,
+   "Z": 21998
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 494285,
+   "Y": -694504,
+   "Z": 37941
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_B_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 516887,
+   "Y": -666987,
+   "Z": 24848
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 518247,
+   "Y": -665136,
+   "Z": 24848
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 512437,
+   "Y": -673122,
+   "Z": 30088
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_B_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 517978,
+   "Y": -649607,
+   "Z": 23188
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 532660,
+   "Y": -610497,
+   "Z": 10930
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 534881,
+   "Y": -612405,
+   "Z": 10948
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 489604,
+   "Y": -623483,
+   "Z": 14833
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 492874,
+   "Y": -632615,
+   "Z": 14834
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 624948,
+   "Y": -612977,
+   "Z": 27565
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 550826,
+   "Y": -593100,
+   "Z": 25770
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 534549,
+   "Y": -669498,
+   "Z": 31226
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 501441,
+   "Y": -687785,
+   "Z": 37957
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_B_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 522377,
+   "Y": -669305,
+   "Z": 25012
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_B_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 522989,
+   "Y": -650132,
+   "Z": 23188
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 496523,
+   "Y": -626369,
+   "Z": 14848
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 504840,
+   "Y": -618190,
+   "Z": 12830
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 487723,
+   "Y": -582989,
+   "Z": 17388
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 538131,
+   "Y": -681708,
+   "Z": 31226
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 558187,
+   "Y": -544178,
+   "Z": 40785
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 551691,
+   "Y": -546404,
+   "Z": 40785
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 550227,
+   "Y": -548962,
+   "Z": 40761
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 508146,
+   "Y": -668122,
+   "Z": 30088
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_B_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 554717,
+   "Y": -645723,
+   "Z": 28869
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 556446,
+   "Y": -644106,
+   "Z": 28869
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 544091,
+   "Y": -657186,
+   "Z": 31253
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Common",
+  "comment": "WorldTree_Common",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 502201,
+   "Y": -726254,
+   "Z": 25409
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_B_Rare",
+  "comment": "WorldTree_Rare",
+  "cooldown": "60 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 598941,
+   "Y": -650816,
+   "Z": 12019
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare",
+  "cooldown": "60 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 586271,
+   "Y": -713316,
+   "Z": 42542
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare",
+  "cooldown": "60 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 532606,
+   "Y": -616554,
+   "Z": 10930
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare",
+  "cooldown": "60 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 539773,
+   "Y": -552811,
+   "Z": 43740
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare",
+  "cooldown": "60 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 498909,
+   "Y": -697702,
+   "Z": 38152
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_B_Rare",
+  "comment": "WorldTree_Rare",
+  "cooldown": "60 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 494905,
+   "Y": -611184,
+   "Z": 15295
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare",
+  "cooldown": "60 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 455515,
+   "Y": -683654,
+   "Z": 21324
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare",
+  "cooldown": "60 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 529588,
+   "Y": -525408,
+   "Z": 41020
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare",
+  "cooldown": "60 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 427745,
+   "Y": -715526,
+   "Z": 18078
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare",
+  "cooldown": "60 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 422495,
+   "Y": -730090,
+   "Z": 19389
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare",
+  "cooldown": "60 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 491139,
+   "Y": -609543,
+   "Z": 15295
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare",
+  "cooldown": "60 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 544017,
+   "Y": -549126,
+   "Z": 43707
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare",
+  "cooldown": "60 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 545979,
+   "Y": -651057,
+   "Z": 28912
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare",
+  "cooldown": "60 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 568514,
+   "Y": -680543,
+   "Z": 35672
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare_Mini",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 537657,
+   "Y": -671370,
+   "Z": 31248
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare_Mini",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 514318,
+   "Y": -527316,
+   "Z": 34007
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare_Mini",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 564489,
+   "Y": -626777,
+   "Z": 20093
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare_Mini",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 580051,
+   "Y": -561659,
+   "Z": 23595
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare_Mini",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 590118,
+   "Y": -592201,
+   "Z": 29312
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare_Mini",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 527211,
+   "Y": -672756,
+   "Z": 25013
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare_Mini",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ },
+ {
+  "type": "Rare Fishing Spot",
+  "item": "Fishing Spot",
+  "pos": {
+   "X": 498119,
+   "Y": -569411,
+   "Z": 33027
+  },
+  "class": "map-fishing-spot-icon",
+  "href": "FishingSpot_WorldTree_Rare",
+  "comment": "WorldTree_Rare_Mini",
+  "cooldown": "15 mins",
+  "__from": "fixedDungeon"
+ }
+]

@@ -1,0 +1,15 @@
+# ---- 构建/导出产物 (可由 tools/ 重新生成) ----
+export/
+
+# ---- Python ----
+__pycache__/
+*.pyc
+
+# ---- 校验/预览用临时图 (tools/ 里脚本可重新生成) ----
+preview_*.png
+_chk*.png
+_crop*.png
+compare_*.png
+
+# ---- 可选: 若不想把 8192 高清底图纳入版本库, 取消下一行注释 ----
+# maps/*_8192.webp

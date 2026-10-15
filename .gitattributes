@@ -1,0 +1,12 @@
+# 默认按文本处理, 二进制文件显式标注 (避免行尾/编码处理带来的差异)
+* text=auto eol=lf
+
+*.png  binary
+*.webp binary
+*.jpg  binary
+*.tgz  binary
+
+# GitHub 语言统计: 本项目主要是数据与前端, 把 src/ 下的解包数据标记为文档/数据而非代码
+src/data/**  linguist-documentation
+src/paldb/** linguist-documentation
+src/tiles/** linguist-vendored

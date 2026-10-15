@@ -1,0 +1,2479 @@
+{
+ "SheepBall": {
+  "cn": "棉悠悠",
+  "zukan": 1,
+  "icon": "T_SheepBall_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "PinkCat": {
+  "cn": "捣蛋猫",
+  "zukan": 2,
+  "icon": "T_PinkCat_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "ChickenPal": {
+  "cn": "皮皮鸡",
+  "zukan": 3,
+  "icon": "T_ChickenPal_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "Carbunclo": {
+  "cn": "翠叶鼠",
+  "zukan": 4,
+  "icon": "T_Carbunclo_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "BluePlatypus": {
+  "cn": "冲浪鸭",
+  "zukan": 5,
+  "icon": "T_BluePlatypus_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "BluePlatypus_Fire": {
+  "cn": "热浪鸭",
+  "zukan": 5,
+  "icon": "T_BluePlatypus_Fire_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "火属性"
+  ]
+ },
+ "CuteFox": {
+  "cn": "玉藻狐",
+  "zukan": 6,
+  "icon": "T_CuteFox_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "FlyingManta": {
+  "cn": "鲁米儿",
+  "zukan": 7,
+  "icon": "T_FlyingManta_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "FlyingManta_Thunder": {
+  "cn": "雷米儿",
+  "zukan": 7,
+  "icon": "T_FlyingManta_Thunder_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "雷属性"
+  ]
+ },
+ "WoolFox": {
+  "cn": "米露菲",
+  "zukan": 8,
+  "icon": "T_WoolFox_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "KendoFrog": {
+  "cn": "武道蛙",
+  "zukan": 9,
+  "icon": "T_KendoFrog_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "KendoFrog_Dark": {
+  "cn": "极道蛙",
+  "zukan": 9,
+  "icon": "T_KendoFrog_Dark_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "暗属性"
+  ]
+ },
+ "LeafMomonga": {
+  "cn": "达鼠泥",
+  "zukan": 10,
+  "icon": "T_LeafMomonga_icon_normal.webp",
+  "elem": [
+   "草属性",
+   "无属性"
+  ]
+ },
+ "Ganesha": {
+  "cn": "壶小象",
+  "zukan": 11,
+  "icon": "T_Ganesha_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "PlantSlime": {
+  "cn": "叶泥泥",
+  "zukan": 12,
+  "icon": "T_PlantSlime_icon_normal.webp",
+  "elem": [
+   "草属性",
+   "地属性"
+  ]
+ },
+ "SamuraiDog": {
+  "cn": "宗铭丸",
+  "zukan": 13,
+  "icon": "T_SamuraiDog_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "CloverFairy": {
+  "cn": "幸叶茸",
+  "zukan": 14,
+  "icon": "T_CloverFairy_icon_normal.webp",
+  "elem": [
+   "草属性",
+   "无属性"
+  ]
+ },
+ "Hedgehog": {
+  "cn": "电棘鼠",
+  "zukan": 15,
+  "icon": "T_Hedgehog_icon_normal.webp",
+  "elem": [
+   "雷属性"
+  ]
+ },
+ "Hedgehog_Ice": {
+  "cn": "冰刺鼠",
+  "zukan": 15,
+  "icon": "T_Hedgehog_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "NegativeKoala": {
+  "cn": "瞅什魔",
+  "zukan": 16,
+  "icon": "T_NegativeKoala_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "Penguin": {
+  "cn": "企丸丸",
+  "zukan": 17,
+  "icon": "T_Penguin_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "冰属性"
+  ]
+ },
+ "Penguin_Electric": {
+  "cn": "闪丸丸",
+  "zukan": 17,
+  "icon": "T_Penguin_Electric_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "雷属性"
+  ]
+ },
+ "CaptainPenguin": {
+  "cn": "企丸王",
+  "zukan": 18,
+  "icon": "T_CaptainPenguin_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "冰属性"
+  ]
+ },
+ "CaptainPenguin_Black": {
+  "cn": "闪丸王",
+  "zukan": 18,
+  "icon": "T_CaptainPenguin_Black_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "雷属性"
+  ]
+ },
+ "WizardOwl": {
+  "cn": "啼卡尔",
+  "zukan": 19,
+  "icon": "T_WizardOwl_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "Alpaca": {
+  "cn": "美露帕",
+  "zukan": 20,
+  "icon": "T_Alpaca_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "KingAlpaca": {
+  "cn": "君王美露帕",
+  "zukan": 21,
+  "icon": "T_KingAlpaca_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "KingAlpaca_Ice": {
+  "cn": "冰帝美露帕",
+  "zukan": 21,
+  "icon": "T_KingAlpaca_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "DreamDemon": {
+  "cn": "寐魔",
+  "zukan": 22,
+  "icon": "T_DreamDemon_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "Monkey": {
+  "cn": "新叶猿",
+  "zukan": 23,
+  "icon": "T_Monkey_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "Monkey_Fire": {
+  "cn": "秋叶猿",
+  "zukan": 23,
+  "icon": "T_Monkey_Fire_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "NightFox": {
+  "cn": "露娜蒂",
+  "zukan": 24,
+  "icon": "T_NightFox_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "LavaGirl": {
+  "cn": "融焰娘",
+  "zukan": 25,
+  "icon": "T_LavaGirl_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "FlameBambi": {
+  "cn": "燎火鹿",
+  "zukan": 26,
+  "icon": "T_FlameBambi_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "Bastet": {
+  "cn": "喵丝特",
+  "zukan": 27,
+  "icon": "T_Bastet_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "Bastet_Ice": {
+  "cn": "冰丝特",
+  "zukan": 27,
+  "icon": "T_Bastet_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "Boar": {
+  "cn": "草莽猪",
+  "zukan": 28,
+  "icon": "T_Boar_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "Kitsunebi": {
+  "cn": "火绒狐",
+  "zukan": 29,
+  "icon": "T_Kitsunebi_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "Kitsunebi_Ice": {
+  "cn": "雪绒狐",
+  "zukan": 29,
+  "icon": "T_Kitsunebi_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "NegativeOctopus": {
+  "cn": "勾魂鱿",
+  "zukan": 30,
+  "icon": "T_NegativeOctopus_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "水属性"
+  ]
+ },
+ "NegativeOctopus_Neutral": {
+  "cn": "蚀魂鱿",
+  "zukan": 30,
+  "icon": "T_NegativeOctopus_Neutral_icon_normal.webp",
+  "elem": [
+   "无属性",
+   "水属性"
+  ]
+ },
+ "CuteMole": {
+  "cn": "遁地鼠",
+  "zukan": 31,
+  "icon": "T_CuteMole_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "Deer": {
+  "cn": "紫霞鹿",
+  "zukan": 32,
+  "icon": "T_Deer_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "Deer_Ground": {
+  "cn": "祇岳鹿",
+  "zukan": 32,
+  "icon": "T_Deer_Ground_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "Garm": {
+  "cn": "猎狼",
+  "zukan": 33,
+  "icon": "T_Garm_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "BerryGoat": {
+  "cn": "灌木羊",
+  "zukan": 34,
+  "icon": "T_BerryGoat_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "BerryGoat_Dark": {
+  "cn": "郁木羊",
+  "zukan": 34,
+  "icon": "T_BerryGoat_Dark_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "MopBaby": {
+  "cn": "毛掸儿",
+  "zukan": 35,
+  "icon": "T_MopBaby_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "MopKing": {
+  "cn": "毛老爹",
+  "zukan": 36,
+  "icon": "T_MopKing_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "TentacleTurtle": {
+  "cn": "盔盔仔",
+  "zukan": 37,
+  "icon": "T_TentacleTurtle_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "TentacleTurtle_Ground": {
+  "cn": "金盔仔",
+  "zukan": 37,
+  "icon": "T_TentacleTurtle_Ground_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "地属性"
+  ]
+ },
+ "WindChimes": {
+  "cn": "吊缚灵",
+  "zukan": 38,
+  "icon": "T_WindChimes_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "WindChimes_Ice": {
+  "cn": "冰缚灵",
+  "zukan": 38,
+  "icon": "T_WindChimes_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "SweetsSheep": {
+  "cn": "棉花糖",
+  "zukan": 39,
+  "icon": "T_SweetsSheep_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "SweetsSheep_Ground": {
+  "cn": "可可棉花糖",
+  "zukan": 39,
+  "icon": "T_SweetsSheep_Ground_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "CowPal": {
+  "cn": "波霸牛",
+  "zukan": 40,
+  "icon": "T_CowPal_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "BlueDragon": {
+  "cn": "碧海龙",
+  "zukan": 41,
+  "icon": "T_BlueDragon_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "龙属性"
+  ]
+ },
+ "BlueDragon_Ice": {
+  "cn": "碧月龙",
+  "zukan": 41,
+  "icon": "T_BlueDragon_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性",
+   "龙属性"
+  ]
+ },
+ "ElecCat": {
+  "cn": "伏特喵",
+  "zukan": 42,
+  "icon": "T_ElecCat_icon_normal.webp",
+  "elem": [
+   "雷属性"
+  ]
+ },
+ "Kelpie": {
+  "cn": "水灵儿",
+  "zukan": 43,
+  "icon": "T_Kelpie_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "Kelpie_Fire": {
+  "cn": "火灵儿",
+  "zukan": 43,
+  "icon": "T_Kelpie_Fire_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "PinkRabbit": {
+  "cn": "姬小兔",
+  "zukan": 44,
+  "icon": "T_PinkRabbit_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "PinkRabbit_Grass": {
+  "cn": "艾小兔",
+  "zukan": 44,
+  "icon": "T_PinkRabbit_Grass_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "JellyfishFairy": {
+  "cn": "海月仙",
+  "zukan": 45,
+  "icon": "T_JellyfishFairy_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "JellyfishGhost": {
+  "cn": "海月灵",
+  "zukan": 46,
+  "icon": "T_JellyfishGhost_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "暗属性"
+  ]
+ },
+ "ClioneTwins": {
+  "cn": "莉欧·莉涅",
+  "zukan": 47,
+  "icon": "T_ClioneTwins_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "OctopusGirl": {
+  "cn": "墨沫姬",
+  "zukan": 48,
+  "icon": "T_OctopusGirl_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "暗属性"
+  ]
+ },
+ "OctopusGirl_Neutral": {
+  "cn": "梦沫姬",
+  "zukan": 48,
+  "icon": "T_OctopusGirl_Neutral_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "无属性"
+  ]
+ },
+ "Eagle": {
+  "cn": "天擒鸟",
+  "zukan": 49,
+  "icon": "T_Eagle_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "GhostBlackCat": {
+  "cn": "念影喵",
+  "zukan": 50,
+  "icon": "T_GhostBlackCat_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "HawkBird": {
+  "cn": "疾风隼",
+  "zukan": 51,
+  "icon": "T_HawkBird_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "CatBat": {
+  "cn": "猫蝠怪",
+  "zukan": 52,
+  "icon": "T_CatBat_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "ColorfulBird": {
+  "cn": "炸蛋鸟",
+  "zukan": 53,
+  "icon": "T_ColorfulBird_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "Kirin": {
+  "cn": "雷角马",
+  "zukan": 54,
+  "icon": "T_Kirin_icon_normal.webp",
+  "elem": [
+   "雷属性"
+  ]
+ },
+ "Kirin_Ice": {
+  "cn": "凌角马",
+  "zukan": 54,
+  "icon": "T_Kirin_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "SharkKid": {
+  "cn": "鲨小子",
+  "zukan": 55,
+  "icon": "T_SharkKid_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "SharkKid_Fire": {
+  "cn": "红小鲨",
+  "zukan": 55,
+  "icon": "T_SharkKid_Fire_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "Werewolf": {
+  "cn": "月镰魔",
+  "zukan": 56,
+  "icon": "T_Werewolf_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "Werewolf_Ice": {
+  "cn": "霜镰魔",
+  "zukan": 56,
+  "icon": "T_Werewolf_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "DarkCrow": {
+  "cn": "黑鸦隐士",
+  "zukan": 57,
+  "icon": "T_DarkCrow_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "FlameBuffalo": {
+  "cn": "炽焰牛",
+  "zukan": 58,
+  "icon": "T_FlameBuffalo_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "FluffyBird": {
+  "cn": "雪绵啾",
+  "zukan": 59,
+  "icon": "T_FluffyBird_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "LittleBriarRose": {
+  "cn": "荆棘魔仙",
+  "zukan": 60,
+  "icon": "T_LittleBriarRose_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "CuteButterfly": {
+  "cn": "幻悦蝶",
+  "zukan": 61,
+  "icon": "T_CuteButterfly_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "ElecPomeranian": {
+  "cn": "电汪汪",
+  "zukan": 62,
+  "icon": "T_ElecPomeranian_icon_normal.webp",
+  "elem": [
+   "雷属性"
+  ]
+ },
+ "FairyDragon": {
+  "cn": "精灵龙",
+  "zukan": 63,
+  "icon": "T_FairyDragon_icon_normal.webp",
+  "elem": [
+   "龙属性"
+  ]
+ },
+ "FairyDragon_Water": {
+  "cn": "水灵龙",
+  "zukan": 63,
+  "icon": "T_FairyDragon_Water_icon_normal.webp",
+  "elem": [
+   "龙属性",
+   "水属性"
+  ]
+ },
+ "BirdDragon": {
+  "cn": "烽歌龙",
+  "zukan": 64,
+  "icon": "T_BirdDragon_icon_normal.webp",
+  "elem": [
+   "火属性",
+   "暗属性"
+  ]
+ },
+ "BirdDragon_Ice": {
+  "cn": "霜歌龙",
+  "zukan": 64,
+  "icon": "T_BirdDragon_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性",
+   "暗属性"
+  ]
+ },
+ "CatVampire": {
+  "cn": "夜幕魔蝠",
+  "zukan": 65,
+  "icon": "T_CatVampire_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "VioletFairy": {
+  "cn": "薇莉塔",
+  "zukan": 66,
+  "icon": "T_VioletFairy_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "SoldierBee": {
+  "cn": "骑士蜂",
+  "zukan": 67,
+  "icon": "T_SoldierBee_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "QueenBee": {
+  "cn": "女皇蜂",
+  "zukan": 68,
+  "icon": "T_QueenBee_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "PinkLizard": {
+  "cn": "博爱蜥",
+  "zukan": 69,
+  "icon": "T_PinkLizard_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "NaughtyCat": {
+  "cn": "笑魇猫",
+  "zukan": 70,
+  "icon": "T_NaughtyCat_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "PurpleSpider": {
+  "cn": "桃蛛娘",
+  "zukan": 71,
+  "icon": "T_PurpleSpider_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "IceSeal": {
+  "cn": "香草豹冰",
+  "zukan": 72,
+  "icon": "T_IceSeal_icon_normal.webp",
+  "elem": [
+   "冰属性",
+   "水属性"
+  ]
+ },
+ "IceSeal_Ground": {
+  "cn": "巧克力豹冰",
+  "zukan": 72,
+  "icon": "T_IceSeal_Ground_icon_normal.webp",
+  "elem": [
+   "冰属性",
+   "地属性"
+  ]
+ },
+ "LizardMan": {
+  "cn": "朋克蜥",
+  "zukan": 73,
+  "icon": "T_LizardMan_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "LizardMan_Fire": {
+  "cn": "热血蜥",
+  "zukan": 73,
+  "icon": "T_LizardMan_Fire_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "Gorilla": {
+  "cn": "铁拳猿",
+  "zukan": 74,
+  "icon": "T_Gorilla_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "Gorilla_Ground": {
+  "cn": "石掌猿",
+  "zukan": 74,
+  "icon": "T_Gorilla_Ground_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "Serpent": {
+  "cn": "滑水蛇",
+  "zukan": 75,
+  "icon": "T_Serpent_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "Serpent_Ground": {
+  "cn": "流沙蛇",
+  "zukan": 75,
+  "icon": "T_Serpent_Ground_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "RobinHood": {
+  "cn": "羽箭射手",
+  "zukan": 76,
+  "icon": "T_RobinHood_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "RobinHood_Ground": {
+  "cn": "山岳射手",
+  "zukan": 76,
+  "icon": "T_RobinHood_Ground_icon_normal.webp",
+  "elem": [
+   "草属性",
+   "地属性"
+  ]
+ },
+ "FlowerRabbit": {
+  "cn": "波娜兔",
+  "zukan": 77,
+  "icon": "T_FlowerRabbit_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "FoxMage": {
+  "cn": "焰巫狐",
+  "zukan": 78,
+  "icon": "T_FoxMage_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "FoxMage_Dark": {
+  "cn": "幽巫狐",
+  "zukan": 78,
+  "icon": "T_FoxMage_Dark_icon_normal.webp",
+  "elem": [
+   "火属性",
+   "暗属性"
+  ]
+ },
+ "CatMage": {
+  "cn": "暗巫猫",
+  "zukan": 79,
+  "icon": "T_CatMage_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "CatMage_Fire": {
+  "cn": "炽巫猫",
+  "zukan": 79,
+  "icon": "T_CatMage_Fire_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "火属性"
+  ]
+ },
+ "HadesBird": {
+  "cn": "雷冥鸟",
+  "zukan": 80,
+  "icon": "T_HadesBird_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "HadesBird_Electric": {
+  "cn": "雷鸣鸟",
+  "zukan": 80,
+  "icon": "T_HadesBird_Electric_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "雷属性"
+  ]
+ },
+ "GrassMinotaur": {
+  "cn": "密林陶洛斯",
+  "zukan": 81,
+  "icon": "T_GrassMinotaur_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "GrassMinotaur_Ice": {
+  "cn": "冰峰陶洛斯",
+  "zukan": 81,
+  "icon": "T_GrassMinotaur_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "Mutant": {
+  "cn": "秘斯媞雅",
+  "zukan": 82,
+  "icon": "T_Mutant_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "FengyunDeeper": {
+  "cn": "云海鹿",
+  "zukan": 83,
+  "icon": "T_FengyunDeeper_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "FengyunDeeper_Electric": {
+  "cn": "雷隐鹿",
+  "zukan": 83,
+  "icon": "T_FengyunDeeper_Electric_icon_normal.webp",
+  "elem": [
+   "雷属性"
+  ]
+ },
+ "FlowerDinosaur": {
+  "cn": "花冠龙",
+  "zukan": 84,
+  "icon": "T_FlowerDinosaur_icon_normal.webp",
+  "elem": [
+   "草属性",
+   "龙属性"
+  ]
+ },
+ "FlowerDinosaur_Electric": {
+  "cn": "雷冠龙",
+  "zukan": 84,
+  "icon": "T_FlowerDinosaur_Electric_icon_normal.webp",
+  "elem": [
+   "雷属性",
+   "龙属性"
+  ]
+ },
+ "Ronin": {
+  "cn": "浪刃武士",
+  "zukan": 85,
+  "icon": "T_Ronin_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "Ronin_Dark": {
+  "cn": "鬼刃武士",
+  "zukan": 85,
+  "icon": "T_Ronin_Dark_icon_normal.webp",
+  "elem": [
+   "火属性",
+   "暗属性"
+  ]
+ },
+ "IceCrocodile": {
+  "cn": "肚肚鳄",
+  "zukan": 86,
+  "icon": "T_IceCrocodile_icon_normal.webp",
+  "elem": [
+   "冰属性",
+   "水属性"
+  ]
+ },
+ "GrassMammoth": {
+  "cn": "森猛犸",
+  "zukan": 87,
+  "icon": "T_GrassMammoth_icon_normal.webp",
+  "elem": [
+   "草属性",
+   "地属性"
+  ]
+ },
+ "GrassMammoth_Ice": {
+  "cn": "雪猛犸",
+  "zukan": 87,
+  "icon": "T_GrassMammoth_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性",
+   "地属性"
+  ]
+ },
+ "StuffedShark": {
+  "cn": "布偶鲨",
+  "zukan": 88,
+  "icon": "T_StuffedShark_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "StuffedShark_Fire": {
+  "cn": "粉粉布偶鲨",
+  "zukan": 88,
+  "icon": "T_StuffedShark_Fire_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "火属性"
+  ]
+ },
+ "FlowerDoll": {
+  "cn": "花丽娜",
+  "zukan": 89,
+  "icon": "T_FlowerDoll_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "FlowerDoll_Fire": {
+  "cn": "樱丽娜",
+  "zukan": 89,
+  "icon": "T_FlowerDoll_Fire_icon_normal.webp",
+  "elem": [
+   "草属性",
+   "火属性"
+  ]
+ },
+ "PandaGirl": {
+  "cn": "莉芳",
+  "zukan": 90,
+  "icon": "T_PandaGirl_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "Baphomet": {
+  "cn": "炎魔羊",
+  "zukan": 91,
+  "icon": "T_Baphomet_icon_normal.webp",
+  "elem": [
+   "火属性",
+   "暗属性"
+  ]
+ },
+ "Baphomet_Dark": {
+  "cn": "暗魔羊",
+  "zukan": 91,
+  "icon": "T_Baphomet_Dark_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "RaijinDaughter": {
+  "cn": "雷鸣童子",
+  "zukan": 92,
+  "icon": "T_RaijinDaughter_icon_normal.webp",
+  "elem": [
+   "雷属性"
+  ]
+ },
+ "RaijinDaughter_Water": {
+  "cn": "天阴童子",
+  "zukan": 92,
+  "icon": "T_RaijinDaughter_Water_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "雷属性"
+  ]
+ },
+ "FireKirin": {
+  "cn": "火麒麟",
+  "zukan": 93,
+  "icon": "T_FireKirin_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "FireKirin_Dark": {
+  "cn": "邪麒麟",
+  "zukan": 93,
+  "icon": "T_FireKirin_Dark_icon_normal.webp",
+  "elem": [
+   "火属性",
+   "暗属性"
+  ]
+ },
+ "LazyDragon": {
+  "cn": "佩克龙",
+  "zukan": 94,
+  "icon": "T_LazyDragon_icon_normal.webp",
+  "elem": [
+   "龙属性",
+   "水属性"
+  ]
+ },
+ "LazyDragon_Electric": {
+  "cn": "派克龙",
+  "zukan": 94,
+  "icon": "T_LazyDragon_Electric_icon_normal.webp",
+  "elem": [
+   "龙属性",
+   "雷属性"
+  ]
+ },
+ "IceFox": {
+  "cn": "吹雪狐",
+  "zukan": 95,
+  "icon": "T_IceFox_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "ThunderBird": {
+  "cn": "迅雷鸟",
+  "zukan": 96,
+  "icon": "T_ThunderBird_icon_normal.webp",
+  "elem": [
+   "雷属性"
+  ]
+ },
+ "ThunderBird_Ice": {
+  "cn": "疾霜鸟",
+  "zukan": 96,
+  "icon": "T_ThunderBird_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "GhostAnglerfish": {
+  "cn": "冥灯鱼",
+  "zukan": 97,
+  "icon": "T_GhostAnglerfish_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "水属性"
+  ]
+ },
+ "GhostAnglerfish_Fire": {
+  "cn": "炙灯鱼",
+  "zukan": 97,
+  "icon": "T_GhostAnglerfish_Fire_icon_normal.webp",
+  "elem": [
+   "火属性",
+   "水属性"
+  ]
+ },
+ "ThunderDog": {
+  "cn": "霹雳犬",
+  "zukan": 98,
+  "icon": "T_ThunderDog_icon_normal.webp",
+  "elem": [
+   "雷属性"
+  ]
+ },
+ "ThunderDog_Ice": {
+  "cn": "凛光犬",
+  "zukan": 98,
+  "icon": "T_ThunderDog_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "DarkScorpion": {
+  "cn": "冥铠蝎",
+  "zukan": 99,
+  "icon": "T_DarkScorpion_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "地属性"
+  ]
+ },
+ "DarkScorpion_Ground": {
+  "cn": "金铠蝎",
+  "zukan": 99,
+  "icon": "T_DarkScorpion_Ground_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "CactusDoll": {
+  "cn": "球抱苞",
+  "zukan": 100,
+  "icon": "T_CactusDoll_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "CactusDoll_Dark": {
+  "cn": "妖抱苞",
+  "zukan": 100,
+  "icon": "T_CactusDoll_Dark_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "草属性"
+  ]
+ },
+ "IceDeer": {
+  "cn": "严冬鹿",
+  "zukan": 101,
+  "icon": "T_IceDeer_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "GrassPanda": {
+  "cn": "叶胖达",
+  "zukan": 102,
+  "icon": "T_GrassPanda_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "GrassPanda_Electric": {
+  "cn": "雷胖达",
+  "zukan": 102,
+  "icon": "T_GrassPanda_Electric_icon_normal.webp",
+  "elem": [
+   "雷属性"
+  ]
+ },
+ "WeaselDragon": {
+  "cn": "疾旋鼬",
+  "zukan": 103,
+  "icon": "T_WeaselDragon_icon_normal.webp",
+  "elem": [
+   "冰属性",
+   "龙属性"
+  ]
+ },
+ "WeaselDragon_Fire": {
+  "cn": "桃旋鼬",
+  "zukan": 103,
+  "icon": "T_WeaselDragon_Fire_icon_normal.webp",
+  "elem": [
+   "火属性",
+   "龙属性"
+  ]
+ },
+ "RedArmorBird": {
+  "cn": "燧火鸟",
+  "zukan": 104,
+  "icon": "T_RedArmorBird_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "VolcanoDragon": {
+  "cn": "流焰龙",
+  "zukan": 105,
+  "icon": "T_VolcanoDragon_icon_normal.webp",
+  "elem": [
+   "火属性",
+   "地属性"
+  ]
+ },
+ "VolcanoDragon_Ice": {
+  "cn": "川霜龙",
+  "zukan": 105,
+  "icon": "T_VolcanoDragon_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性",
+   "地属性"
+  ]
+ },
+ "TropicalOstrich": {
+  "cn": "咕咕桑葩",
+  "zukan": 106,
+  "icon": "T_TropicalOstrich_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "DrillGame": {
+  "cn": "碎岩龟",
+  "zukan": 107,
+  "icon": "T_DrillGame_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "SakuraSaurus": {
+  "cn": "连理龙",
+  "zukan": 108,
+  "icon": "T_SakuraSaurus_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "SakuraSaurus_Water": {
+  "cn": "海誓龙",
+  "zukan": 108,
+  "icon": "T_SakuraSaurus_Water_icon_normal.webp",
+  "elem": [
+   "草属性",
+   "水属性"
+  ]
+ },
+ "LazyCatfish": {
+  "cn": "趴趴鲶",
+  "zukan": 109,
+  "icon": "T_LazyCatfish_icon_normal.webp",
+  "elem": [
+   "地属性",
+   "水属性"
+  ]
+ },
+ "LazyCatfish_Gold": {
+  "cn": "梆梆鲶",
+  "zukan": 109,
+  "icon": "T_LazyCatfish_Gold_icon_normal.webp",
+  "elem": [
+   "地属性",
+   "水属性"
+  ]
+ },
+ "Plesiosaur": {
+  "cn": "梁叶龙",
+  "zukan": 110,
+  "icon": "T_Plesiosaur_icon_normal.webp",
+  "elem": [
+   "草属性",
+   "地属性"
+  ]
+ },
+ "AmaterasuWolf": {
+  "cn": "苍焰狼",
+  "zukan": 111,
+  "icon": "T_AmaterasuWolf_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "AmaterasuWolf_Dark": {
+  "cn": "幽焰狼",
+  "zukan": 111,
+  "icon": "T_AmaterasuWolf_Dark_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "Manticore": {
+  "cn": "狱焰王",
+  "zukan": 112,
+  "icon": "T_Manticore_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "Manticore_Dark": {
+  "cn": "狱阎王",
+  "zukan": 112,
+  "icon": "T_Manticore_Dark_icon_normal.webp",
+  "elem": [
+   "火属性",
+   "暗属性"
+  ]
+ },
+ "HerculesBeetle": {
+  "cn": "铠格力斯",
+  "zukan": 113,
+  "icon": "T_HerculesBeetle_icon_normal.webp",
+  "elem": [
+   "地属性",
+   "草属性"
+  ]
+ },
+ "HerculesBeetle_Ground": {
+  "cn": "格鲁力斯",
+  "zukan": 113,
+  "icon": "T_HerculesBeetle_Ground_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "SnowPeafowl": {
+  "cn": "白真雪雀",
+  "zukan": 114,
+  "icon": "T_SnowPeafowl_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "DarkFlameFox": {
+  "cn": "紫狐娇",
+  "zukan": 115,
+  "icon": "T_DarkFlameFox_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "火属性"
+  ]
+ },
+ "WhiteMoth": {
+  "cn": "绸笠蛾",
+  "zukan": 116,
+  "icon": "T_WhiteMoth_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "WhiteMoth_Neutral": {
+  "cn": "绢笠蛾",
+  "zukan": 116,
+  "icon": "T_WhiteMoth_Neutral_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "GhostBeast": {
+  "cn": "噬魂兽",
+  "zukan": 117,
+  "icon": "T_GhostBeast_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "MushroomDragon": {
+  "cn": "菇咚",
+  "zukan": 118,
+  "icon": "T_MushroomDragon_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "MushroomDragon_Dark": {
+  "cn": "菇波",
+  "zukan": 118,
+  "icon": "T_MushroomDragon_Dark_icon_normal.webp",
+  "elem": [
+   "草属性",
+   "暗属性"
+  ]
+ },
+ "IceWitch": {
+  "cn": "冰姬灵",
+  "zukan": 119,
+  "icon": "T_IceWitch_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "MummyPal": {
+  "cn": "缚乃伊",
+  "zukan": 120,
+  "icon": "T_MummyPal_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "地属性"
+  ]
+ },
+ "Umihebi": {
+  "cn": "覆海龙",
+  "zukan": 121,
+  "icon": "T_Umihebi_icon_normal.webp",
+  "elem": [
+   "龙属性",
+   "水属性"
+  ]
+ },
+ "Umihebi_Fire": {
+  "cn": "腾炎龙",
+  "zukan": 121,
+  "icon": "T_Umihebi_Fire_icon_normal.webp",
+  "elem": [
+   "龙属性",
+   "火属性"
+  ]
+ },
+ "Suzaku": {
+  "cn": "朱雀",
+  "zukan": 122,
+  "icon": "T_Suzaku_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "Suzaku_Water": {
+  "cn": "清雀",
+  "zukan": 122,
+  "icon": "T_Suzaku_Water_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "FeatherOstrich": {
+  "cn": "战冠雀",
+  "zukan": 123,
+  "icon": "T_FeatherOstrich_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "SkyDragon": {
+  "cn": "天羽龙",
+  "zukan": 124,
+  "icon": "T_SkyDragon_icon_normal.webp",
+  "elem": [
+   "龙属性"
+  ]
+ },
+ "SkyDragon_Grass": {
+  "cn": "翠羽龙",
+  "zukan": 124,
+  "icon": "T_SkyDragon_Grass_icon_normal.webp",
+  "elem": [
+   "龙属性",
+   "草属性"
+  ]
+ },
+ "LeafPrincess": {
+  "cn": "春彩娘",
+  "zukan": 125,
+  "icon": "T_LeafPrincess_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "SmallArmadillo": {
+  "cn": "球犰",
+  "zukan": 126,
+  "icon": "T_SmallArmadillo_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "GuardianDog": {
+  "cn": "八云犬",
+  "zukan": 127,
+  "icon": "T_GuardianDog_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "SwordCutlassfish": {
+  "cn": "鞘刀鱼",
+  "zukan": 128,
+  "icon": "T_SwordCutlassfish_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "SwordCutlassfish_Fire": {
+  "cn": "炼刃鱼",
+  "zukan": 128,
+  "icon": "T_SwordCutlassfish_Fire_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "火属性"
+  ]
+ },
+ "VolcanicMonster": {
+  "cn": "熔岩兽",
+  "zukan": 129,
+  "icon": "T_VolcanicMonster_icon_normal.webp",
+  "elem": [
+   "火属性",
+   "地属性"
+  ]
+ },
+ "VolcanicMonster_Ice": {
+  "cn": "寒霜兽",
+  "zukan": 129,
+  "icon": "T_VolcanicMonster_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性",
+   "地属性"
+  ]
+ },
+ "NightBlueHorse": {
+  "cn": "夜冥驹",
+  "zukan": 130,
+  "icon": "T_NightBlueHorse_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "NightBlueHorse_Neutral": {
+  "cn": "日耀驹",
+  "zukan": 130,
+  "icon": "T_NightBlueHorse_Neutral_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "RockBeast": {
+  "cn": "磐峰兽",
+  "zukan": 131,
+  "icon": "T_RockBeast_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "RockBeast_Ice": {
+  "cn": "寒峰兽",
+  "zukan": 131,
+  "icon": "T_RockBeast_Ice_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "WhiteTiger": {
+  "cn": "冰棘兽",
+  "zukan": 132,
+  "icon": "T_WhiteTiger_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "WhiteTiger_Ground": {
+  "cn": "金棘兽",
+  "zukan": 132,
+  "icon": "T_WhiteTiger_Ground_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "SmallYeti": {
+  "cn": "雪墩墩",
+  "zukan": 133,
+  "icon": "T_SmallYeti_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "Yeti": {
+  "cn": "白绒雪怪",
+  "zukan": 134,
+  "icon": "T_Yeti_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "Yeti_Grass": {
+  "cn": "绿苔绒怪",
+  "zukan": 134,
+  "icon": "T_Yeti_Grass_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "CandleGhost": {
+  "cn": "恐炬灵",
+  "zukan": 135,
+  "icon": "T_CandleGhost_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "火属性"
+  ]
+ },
+ "VenusFlytrap": {
+  "cn": "颚莉丝",
+  "zukan": 136,
+  "icon": "T_VenusFlytrap_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "KingBahamut": {
+  "cn": "焰煌",
+  "zukan": 137,
+  "icon": "T_KingBahamut_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "KingBahamut_Dragon": {
+  "cn": "殁殃",
+  "zukan": 137,
+  "icon": "T_KingBahamut_Dragon_icon_normal.webp",
+  "elem": [
+   "龙属性",
+   "火属性"
+  ]
+ },
+ "GrassGolem": {
+  "cn": "双心岩傀",
+  "zukan": 138,
+  "icon": "T_GrassGolem_icon_normal.webp",
+  "elem": [
+   "地属性",
+   "草属性"
+  ]
+ },
+ "GrassGolem_Dark": {
+  "cn": "咒心岩傀",
+  "zukan": 138,
+  "icon": "T_GrassGolem_Dark_icon_normal.webp",
+  "elem": [
+   "地属性",
+   "暗属性"
+  ]
+ },
+ "Anubis": {
+  "cn": "阿努比斯",
+  "zukan": 139,
+  "icon": "T_Anubis_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "Sekhmet": {
+  "cn": "塞赫麦特",
+  "zukan": 140,
+  "icon": "T_Sekhmet_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "ScorpionMan": {
+  "cn": "蛊刺妖",
+  "zukan": 141,
+  "icon": "T_ScorpionMan_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "地属性"
+  ]
+ },
+ "ScorpionMan_Electric": {
+  "cn": "电针妖",
+  "zukan": 141,
+  "icon": "T_ScorpionMan_Electric_icon_normal.webp",
+  "elem": [
+   "雷属性",
+   "地属性"
+  ]
+ },
+ "CubeTurtle": {
+  "cn": "重岩龟",
+  "zukan": 142,
+  "icon": "T_CubeTurtle_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "CubeTurtle_Neutral": {
+  "cn": "净岩龟",
+  "zukan": 142,
+  "icon": "T_CubeTurtle_Neutral_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "BadCatgirl": {
+  "cn": "妮瞅莎",
+  "zukan": 143,
+  "icon": "T_BadCatgirl_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "MimicDog": {
+  "cn": "旺财",
+  "zukan": 144,
+  "icon": "T_MimicDog_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "DarkAlien": {
+  "cn": "杰诺贝达",
+  "zukan": 145,
+  "icon": "T_DarkAlien_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "WhiteAlienDragon": {
+  "cn": "杰诺路达",
+  "zukan": 146,
+  "icon": "T_WhiteAlienDragon_icon_normal.webp",
+  "elem": [
+   "龙属性"
+  ]
+ },
+ "BlueberryFairy": {
+  "cn": "梅莉姆",
+  "zukan": 147,
+  "icon": "T_BlueberryFairy_icon_normal.webp",
+  "elem": [
+   "草属性",
+   "暗属性"
+  ]
+ },
+ "GhostRabbit": {
+  "cn": "魅爱莉",
+  "zukan": 148,
+  "icon": "T_GhostRabbit_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "GhostRabbit_Grass": {
+  "cn": "碧艾莉",
+  "zukan": 148,
+  "icon": "T_GhostRabbit_Grass_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "BlackPuppy": {
+  "cn": "墨丸",
+  "zukan": 149,
+  "icon": "T_BlackPuppy_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "BlackPuppy_Ice": {
+  "cn": "冬丸",
+  "zukan": 149,
+  "icon": "T_BlackPuppy_Ice_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "冰属性"
+  ]
+ },
+ "MysteryMask": {
+  "cn": "面惧",
+  "zukan": 150,
+  "icon": "T_MysteryMask_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "IceNarwhal": {
+  "cn": "凉晶鲸",
+  "zukan": 151,
+  "icon": "T_IceNarwhal_icon_normal.webp",
+  "elem": [
+   "冰属性",
+   "水属性"
+  ]
+ },
+ "IceNarwhal_Fire": {
+  "cn": "桃晶鲸",
+  "zukan": 151,
+  "icon": "T_IceNarwhal_Fire_icon_normal.webp",
+  "elem": [
+   "冰属性",
+   "火属性"
+  ]
+ },
+ "GrassRabbitMan": {
+  "cn": "踏春兔",
+  "zukan": 152,
+  "icon": "T_GrassRabbitMan_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "GrimGirl": {
+  "cn": "幽恋娜",
+  "zukan": 153,
+  "icon": "T_GrimGirl_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "GoldenHorse": {
+  "cn": "金驰兽",
+  "zukan": 154,
+  "icon": "T_GoldenHorse_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "SifuDog": {
+  "cn": "汪宗师",
+  "zukan": 155,
+  "icon": "T_SifuDog_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "SumoDog": {
+  "cn": "力士獒",
+  "zukan": 156,
+  "icon": "T_SumoDog_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "WhiteDeer": {
+  "cn": "净世鹿",
+  "zukan": 157,
+  "icon": "T_WhiteDeer_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "WhiteDeer_Dark": {
+  "cn": "织夜鹿",
+  "zukan": 157,
+  "icon": "T_WhiteDeer_Dark_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "BlackMetalDragon": {
+  "cn": "魔渊龙",
+  "zukan": 158,
+  "icon": "T_BlackMetalDragon_icon_normal.webp",
+  "elem": [
+   "龙属性",
+   "暗属性"
+  ]
+ },
+ "WingGolem": {
+  "cn": "泰锋",
+  "zukan": 159,
+  "icon": "T_WingGolem_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "WingGolem_Fire": {
+  "cn": "丹烽",
+  "zukan": 159,
+  "icon": "T_WingGolem_Fire_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "WhiteShieldDragon": {
+  "cn": "艾基鲁迦",
+  "zukan": 160,
+  "icon": "T_WhiteShieldDragon_icon_normal.webp",
+  "elem": [
+   "龙属性"
+  ]
+ },
+ "BlueThunderHorse": {
+  "cn": "驭雷马",
+  "zukan": 161,
+  "icon": "T_BlueThunderHorse_icon_normal.webp",
+  "elem": [
+   "雷属性"
+  ]
+ },
+ "LongCat": {
+  "cn": "喵璐璐",
+  "zukan": 162,
+  "icon": "T_LongCat_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "ElecSnail": {
+  "cn": "电涡蜗",
+  "zukan": 163,
+  "icon": "T_ElecSnail_icon_normal.webp",
+  "elem": [
+   "雷属性"
+  ]
+ },
+ "ElecSnail_Ground": {
+  "cn": "金涡蜗",
+  "zukan": 163,
+  "icon": "T_ElecSnail_Ground_icon_normal.webp",
+  "elem": [
+   "雷属性",
+   "地属性"
+  ]
+ },
+ "DandelionGirl": {
+  "cn": "蒲蒲飞芽",
+  "zukan": 164,
+  "icon": "T_DandelionGirl_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "BrownRabbit": {
+  "cn": "詹兔曼",
+  "zukan": 165,
+  "icon": "T_BrownRabbit_icon_normal.webp",
+  "elem": [
+   "地属性"
+  ]
+ },
+ "HoodGhost": {
+  "cn": "兜兜灵",
+  "zukan": 166,
+  "icon": "T_HoodGhost_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "ElecLizard": {
+  "cn": "电懒懒",
+  "zukan": 167,
+  "icon": "T_ElecLizard_icon_normal.webp",
+  "elem": [
+   "雷属性"
+  ]
+ },
+ "OniGhostGirl": {
+  "cn": "吓丝妮",
+  "zukan": 168,
+  "icon": "T_OniGhostGirl_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "KingSunfish": {
+  "cn": "曼波王",
+  "zukan": 169,
+  "icon": "T_KingSunfish_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "KingSunfish_Thunder": {
+  "cn": "曼波皇",
+  "zukan": 169,
+  "icon": "T_KingSunfish_Thunder_icon_normal.webp",
+  "elem": [
+   "水属性",
+   "雷属性"
+  ]
+ },
+ "SleeveRabbit": {
+  "cn": "兔绣袖",
+  "zukan": 170,
+  "icon": "T_SleeveRabbit_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "GhostDragon": {
+  "cn": "灵曦龙",
+  "zukan": 171,
+  "icon": "T_GhostDragon_icon_normal.webp",
+  "elem": [
+   "龙属性",
+   "暗属性"
+  ]
+ },
+ "GhostDragon_Fire": {
+  "cn": "狱熙龙",
+  "zukan": 171,
+  "icon": "T_GhostDragon_Fire_icon_normal.webp",
+  "elem": [
+   "龙属性",
+   "火属性"
+  ]
+ },
+ "ThunderFluffyBird": {
+  "cn": "雷云鹫",
+  "zukan": 172,
+  "icon": "T_ThunderFluffyBird_icon_normal.webp",
+  "elem": [
+   "雷属性"
+  ]
+ },
+ "RedFlowerBird": {
+  "cn": "大红呱",
+  "zukan": 173,
+  "icon": "T_RedFlowerBird_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "FoxExorcist": {
+  "cn": "昭炎狐",
+  "zukan": 174,
+  "icon": "T_FoxExorcist_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "LotusDragon": {
+  "cn": "沁莲龙",
+  "zukan": 175,
+  "icon": "T_LotusDragon_icon_normal.webp",
+  "elem": [
+   "草属性",
+   "水属性"
+  ]
+ },
+ "ClownRabbit": {
+  "cn": "拉比耶尔",
+  "zukan": 176,
+  "icon": "T_ClownRabbit_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "ThiefBird": {
+  "cn": "盗影鸦",
+  "zukan": 177,
+  "icon": "T_ThiefBird_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "SnakeGirl": {
+  "cn": "梅杜娜",
+  "zukan": 178,
+  "icon": "T_SnakeGirl_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "MushroomLady": {
+  "cn": "红菇娘",
+  "zukan": 179,
+  "icon": "T_MushroomLady_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "LanternButler": {
+  "cn": "妖焰灯",
+  "zukan": 180,
+  "icon": "T_LanternButler_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "火属性"
+  ]
+ },
+ "MoonChild": {
+  "cn": "缀夜星",
+  "zukan": 181,
+  "icon": "T_MoonChild_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "MonochromeQueen": {
+  "cn": "墨罗娜",
+  "zukan": 182,
+  "icon": "T_MonochromeQueen_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "无属性"
+  ]
+ },
+ "KabukiMan": {
+  "cn": "燎火舞伶",
+  "zukan": 183,
+  "icon": "T_KabukiMan_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "DomeArmorDragon": {
+  "cn": "磐甲龙",
+  "zukan": 184,
+  "icon": "T_DomeArmorDragon_icon_normal.webp",
+  "elem": [
+   "龙属性",
+   "地属性"
+  ]
+ },
+ "ElecPanda": {
+  "cn": "暴电熊",
+  "zukan": 185,
+  "icon": "T_ElecPanda_icon_normal.webp",
+  "elem": [
+   "雷属性"
+  ]
+ },
+ "LilyQueen": {
+  "cn": "百合女王",
+  "zukan": 186,
+  "icon": "T_LilyQueen_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "LilyQueen_Dark": {
+  "cn": "黑月女王",
+  "zukan": 186,
+  "icon": "T_LilyQueen_Dark_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "ThunderDragonMan": {
+  "cn": "波鲁杰克斯",
+  "zukan": 187,
+  "icon": "T_ThunderDragonMan_icon_normal.webp",
+  "elem": [
+   "龙属性",
+   "雷属性"
+  ]
+ },
+ "Horus": {
+  "cn": "荷鲁斯",
+  "zukan": 188,
+  "icon": "T_Horus_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "Horus_Water": {
+  "cn": "伊西斯",
+  "zukan": 188,
+  "icon": "T_Horus_Water_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "BlackGriffon": {
+  "cn": "异构格里芬",
+  "zukan": 189,
+  "icon": "T_BlackGriffon_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "MoonQueen": {
+  "cn": "辉月伊",
+  "zukan": 190,
+  "icon": "T_MoonQueen_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "无属性"
+  ]
+ },
+ "SnowTigerBeastman": {
+  "cn": "霜牙王",
+  "zukan": 191,
+  "icon": "T_SnowTigerBeastman_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "BlueSkyDragon": {
+  "cn": "霄龙",
+  "zukan": 192,
+  "icon": "T_BlueSkyDragon_icon_normal.webp",
+  "elem": [
+   "龙属性",
+   "水属性"
+  ]
+ },
+ "Mothman": {
+  "cn": "暮尘蛾",
+  "zukan": 193,
+  "icon": "T_Mothman_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "FlowerPrince": {
+  "cn": "夜蔓爵",
+  "zukan": 194,
+  "icon": "T_FlowerPrince_icon_normal.webp",
+  "elem": [
+   "草属性",
+   "暗属性"
+  ]
+ },
+ "NightLady": {
+  "cn": "贝菈诺娃",
+  "zukan": 195,
+  "icon": "T_NightLady_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "NightLady_Dark": {
+  "cn": "贝菈露洁",
+  "zukan": 195,
+  "icon": "T_NightLady_Dark_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "DarkMechaDragon": {
+  "cn": "杰诺多兰",
+  "zukan": 196,
+  "icon": "T_DarkMechaDragon_icon_normal.webp",
+  "elem": [
+   "暗属性",
+   "龙属性"
+  ]
+ },
+ "LegendDeer": {
+  "cn": "默世鹿",
+  "zukan": 197,
+  "icon": "T_LegendDeer_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "SaintCentaur": {
+  "cn": "圣光骑士",
+  "zukan": 198,
+  "icon": "T_SaintCentaur_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "BlackCentaur": {
+  "cn": "混沌骑士",
+  "zukan": 199,
+  "icon": "T_BlackCentaur_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "IceHorse": {
+  "cn": "唤冬兽",
+  "zukan": 200,
+  "icon": "T_IceHorse_icon_normal.webp",
+  "elem": [
+   "冰属性"
+  ]
+ },
+ "IceHorse_Dark": {
+  "cn": "唤夜兽",
+  "zukan": 200,
+  "icon": "T_IceHorse_Dark_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "PoseidonOrca": {
+  "cn": "海皇鲸",
+  "zukan": 201,
+  "icon": "T_PoseidonOrca_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "JetDragon": {
+  "cn": "空涡龙",
+  "zukan": 202,
+  "icon": "T_JetDragon_icon_normal.webp",
+  "elem": [
+   "龙属性"
+  ]
+ },
+ "KingWhale": {
+  "cn": "奥沧鲸",
+  "zukan": 203,
+  "icon": "T_KingWhale_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "WorldTreeDragon": {
+  "cn": "枯星龙",
+  "zukan": 204,
+  "icon": "T_WorldTreeDragon_icon_normal.webp",
+  "elem": []
+ },
+ "YakushimaMonster001": {
+  "cn": "绿史莱姆",
+  "zukan": 0,
+  "icon": "T_YakushimaMonster001_icon_normal.webp",
+  "elem": [
+   "草属性"
+  ]
+ },
+ "YakushimaMonster001_Blue": {
+  "cn": "蓝史莱姆",
+  "zukan": 0,
+  "icon": "T_YakushimaMonster001_Blue_icon_normal.webp",
+  "elem": [
+   "水属性"
+  ]
+ },
+ "YakushimaMonster001_Red": {
+  "cn": "红史莱姆",
+  "zukan": 0,
+  "icon": "T_YakushimaMonster001_Red_icon_normal.webp",
+  "elem": [
+   "火属性"
+  ]
+ },
+ "YakushimaMonster001_Purple": {
+  "cn": "紫史莱姆",
+  "zukan": 0,
+  "icon": "T_YakushimaMonster001_Purple_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "YakushimaMonster001_Pink": {
+  "cn": "夜明史莱姆",
+  "zukan": 0,
+  "icon": "T_YakushimaMonster001_Pink_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "YakushimaMonster001_Rainbow": {
+  "cn": "彩虹史莱姆",
+  "zukan": 0,
+  "icon": "T_YakushimaMonster001_Rainbow_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "YakushimaMonster002": {
+  "cn": "附魔剑",
+  "zukan": 0,
+  "icon": "T_YakushimaMonster002_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "YakushimaMonster003": {
+  "cn": "洞穴蝙蝠",
+  "zukan": 0,
+  "icon": "T_YakushimaMonster003_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "YakushimaMonster003_Purple": {
+  "cn": "夜明蝙蝠",
+  "zukan": 0,
+  "icon": "T_YakushimaMonster003_Purple_icon_normal.webp",
+  "elem": [
+   "无属性"
+  ]
+ },
+ "YakushimaBoss001": {
+  "cn": "克苏鲁之眼",
+  "zukan": 0,
+  "icon": "T_YakushimaBoss001_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ },
+ "YakushimaBoss001_Small": {
+  "cn": "恶魔眼",
+  "zukan": 0,
+  "icon": "T_YakushimaBoss001_Small_icon_normal.webp",
+  "elem": [
+   "暗属性"
+  ]
+ }
+}

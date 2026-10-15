@@ -1,0 +1,28 @@
+{
+ "maps": [
+  {
+   "key": "palpagos",
+   "label": "帕洛斯群岛",
+   "bounds": {
+    "minX": -1099400.0,
+    "maxX": 349400.0,
+    "minY": -724400.0,
+    "maxY": 724400.0
+   },
+   "img8k": "map_palpagos_8192.webp",
+   "img4k": "map_palpagos_4096.webp"
+  },
+  {
+   "key": "worldtree",
+   "label": "世界树",
+   "bounds": {
+    "minX": 347351.5,
+    "maxX": 689148.5,
+    "minY": -818197.0,
+    "maxY": -476400.0
+   },
+   "img8k": "map_worldtree_8192.webp",
+   "img4k": "map_worldtree_4096.webp"
+  }
+ ]
+}
