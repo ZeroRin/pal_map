@@ -269,7 +269,12 @@ check(!!statsEl && statsEl.innerHTML.includes('<span'),
       '统计面板以 HTML 渲染 (颜色标记生效)');
 check(!/<span/.test(statsEl.textContent || ''),
       '统计内容未走 textContent (不会外露 HTML 标记)');
-check(/底图 内嵌 4096/.test(statsEl.innerHTML), '统计行标明当前底图来源');
+check(!/底图 内嵌/.test(statsEl.innerHTML), '统计行不再显示底图来源说明');
+// 图层顺序: 普通刷怪 / 野外Boss / 监禁Boss / 地下城 / 普通钓点 / 稀有钓点 / 人类通缉犯 / 无数据
+const order = ev("Object.keys(DATA.types).map(k => DATA.types[k].code).join(',')");
+check(order === 'C,F,I,DG,FC,FR,NB,ND', `图层顺序正确 (${order})`);
+check(/<label[^>]*>\s*<input[^>]*>\s*地下城/.test(html) || html.includes('地下城'),
+      '地下城图层仍在控制面板里');
 
 console.log(ok ? '\nSMOKE TEST: PASS' : '\nSMOKE TEST: FAIL');
 process.exit(ok ? 0 : 1);

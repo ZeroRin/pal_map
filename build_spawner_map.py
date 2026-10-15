@@ -38,12 +38,12 @@ MAPS_DIR = os.path.join(ROOT, "maps")
 MAPS_URL = "maps"                      # HTML 中引用高清底图的相对前缀
 OUT_HTML = os.path.join(ROOT, "pal_spawner_map.html")
 
-TYPE_MAP = {  # -> (短码, 中文名, 颜色)
+TYPE_MAP = {  # -> (短码, 中文名, 颜色); 字典顺序 = 页面图层的显示顺序
     "EPalSpawnedCharacterType::Common":            ("C", "普通刷怪",   "#3fb950"),
     "EPalSpawnedCharacterType::FieldBoss":         ("F", "野外Boss",   "#f85149"),
+    "EPalSpawnedCharacterType::ImprisonmentBoss":  ("I", "监禁Boss",   "#d29922"),
     # 地下城: 洞窟Boss 与洞窟内部小怪点坐标完全重合, 统一归一个图层, 由合并后的地下城面板展示
     "EPalSpawnedCharacterType::RandomDungeonBoss": ("DG", "地下城",    "#bc8cff"),
-    "EPalSpawnedCharacterType::ImprisonmentBoss":  ("I", "监禁Boss",   "#d29922"),
     # 钓点 (坐标来自 paldb 地图数据; 类型与产出关联解包 DataTable)
     "EPalFishingSpotType::Common":                 ("FC", "普通钓点",  "#22d3ee"),
     "EPalFishingSpotType::Rare":                   ("FR", "稀有钓点",  "#f472b6"),
@@ -1581,7 +1581,6 @@ function updateStats(){
     parts.join(' · ')+
     `\n普通钓点 ${c.FC} · 稀有钓点 ${c.FR}`+
     (show['ND']?`\n无数据(残留 sheet) ${c.ND}`:`\n<span style="color:#6e7681">无数据图层已隐藏 (${c.ND} 个)</span>`)+
-    `\n<span style="color:#6e7681">底图 内嵌 4096 (随 HTML 一起到达, 无额外请求)</span>`+
     `\n<span style="color:#6e7681">Boss 头像 ${BOSS_M}m→${iconPxBoss()}px (${BOSS_MIN}~${BOSS_MAX})</span>`+
     `\n<span style="color:#6e7681">普通点头像 ${PAL_M}m→${iconPxPal()}px (${PAL_MIN}~${PAL_MAX}): `+
     `${palIconMode?(palIconsOn?'显示中':`已开启, 放大到位后显示 (需 ≥${PAL_LOD_PX}px 且同屏 ≤${PAL_LOD_MAX} 个)`):'已关闭'}</span>`;
